@@ -23,7 +23,7 @@
           </a>
 
           <!-- Menu -->
-          <ul class="flex gap-8 font-bold">
+          <ul class="gap-8 font-bold hidden md:flex">
             <li class="home">
               <a
                 href="#"
@@ -60,56 +60,58 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="relative h-[70vh] flex items-center justify-center text-center overflow-hidden"
+      class="relative h-[40vh] md:h-[50vh] lg:h-[70vh] flex items-center justify-center text-center overflow-hidden"
     >
       <!-- Background Image -->
       <img
         src="assets/hero.png"
         alt="Security cameras background"
-        class="absolute inset-0 w-full h-full object-cover"
+        class="absolute inset-0 w-full h-full object-fit"
       />
 
       <!-- Overlay (frosted glass gradient) -->
       <div
-        class="absolute top-30 left-70 right-70 bottom-30 backdrop-blur-[2px] border border-white/5 rounded-4xl"
-      ></div>
+        class="absolute top-[8vh] w-[80vw] bottom-[5vh] backdrop-blur-[2px] border border-white/5 rounded-4xl"
+      >
+        <!-- Content -->
+        <div
+          class="relative flex flex-col justify-evenly z-10 w-full h-full px-6 text-white"
+        >
+          <h1 class="text-[4vw] font-extrabold leading-tight">
+            Protege lo que más Importa
+          </h1>
+          <p class="text-[2vw] md:text-xl text-slate-200">
+            Ofrecemos servicios especializados en
+            <span class="font-semibold">
+              CCTV • Alarmas de incdendios • Alarmas de monitoreo • Cercado
+              Eléctrico • Control de Acceso</span
+            >, complementos esenciales para crear soluciones eficaces de
+            seguridad.
+          </p>
 
-      <!-- Content -->
-      <div class="relative z-10 max-w-3xl px-6 text-white">
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
-          Protege lo que más Importa
-        </h1>
-        <p class="mt-6 text-lg md:text-xl text-slate-200">
-          Ofrecemos servicios especializados en
-          <span class="font-semibold">
-            CCTV • Alarmas de incdendios • Alarmas de monitoreo • Cercado
-            Eléctrico • Control de Acceso </span
-          >, complementos esenciales para crear soluciones eficaces de
-          seguridad.
-        </p>
-
-        <!-- CTAs -->
-        <div class="mt-8 mb-20 flex flex-wrap gap-4 justify-center">
-          <a
-            href="#contact"
-            class="bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/30 px-8 py-4 rounded-xl text-white font-semibold text-2xl uppercase"
-          >
-            Contáctanos
-          </a>
-        </div>
-        <div class="flex flex-wrap gap-4 justify-center">
-          <img
-            src="https://cloud-security.cl/wp-content/uploads/2025/07/cropped-LOGO-CLOUD-SECURITY.png"
-            alt="could-security"
-            width="240"
-            style="filter: brightness(0) invert(1)"
-          />
+          <!-- CTAs -->
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a
+              href="#contact"
+              class="bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/30 px-2 py-2 md:px-8 md:py-4 rounded-xl text-white font-semibold text-md md:text-2xl uppercase"
+            >
+              Contáctanos
+            </a>
+          </div>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <img
+              src="https://cloud-security.cl/wp-content/uploads/2025/07/cropped-LOGO-CLOUD-SECURITY.png"
+              alt="could-security"
+              class="w-[20vw]"
+              style="filter: brightness(0) invert(1)"
+            />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-40 bg-slate-50 dark:bg-slate-900">
+    <section id="services" class="py-20 md:py-40 bg-slate-50 dark:bg-slate-900">
       <div class="max-w-7xl mx-auto px-6">
         <!-- Section Title -->
         <div class="text-left mb-16 max-w-[620px]">
