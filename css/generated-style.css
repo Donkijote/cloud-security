@@ -217,8 +217,8 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-\[8vh\] {
-    top: 8vh;
+  .top-\[6vh\] {
+    top: 6vh;
   }
   .right-6 {
     right: calc(var(--spacing) * 6);
@@ -229,8 +229,8 @@
   .bottom-6 {
     bottom: calc(var(--spacing) * 6);
   }
-  .bottom-\[5vh\] {
-    bottom: 5vh;
+  .bottom-\[3vh\] {
+    bottom: 3vh;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -280,11 +280,14 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
   }
-  .mb-40 {
-    margin-bottom: calc(var(--spacing) * 40);
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
   }
   .block {
     display: block;
@@ -313,9 +316,6 @@
   .h-\[0\.25px\] {
     height: 0.25px;
   }
-  .h-\[40vh\] {
-    height: 40vh;
-  }
   .h-\[500px\] {
     height: 500px;
   }
@@ -331,8 +331,11 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
-  .w-\[20vw\] {
-    width: 20vw;
+  .w-14 {
+    width: calc(var(--spacing) * 14);
+  }
+  .w-\[18vw\] {
+    width: 18vw;
   }
   .w-\[80vw\] {
     width: 80vw;
@@ -396,11 +399,6 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
-  }
-  .truncate {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -498,9 +496,6 @@
   .object-cover {
     object-fit: cover;
   }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
-  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -571,11 +566,11 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .text-\[2vw\] {
-    font-size: 2vw;
+  .text-\[3\.5vw\] {
+    font-size: 3.5vw;
   }
-  .text-\[4vw\] {
-    font-size: 4vw;
+  .text-\[5vw\] {
+    font-size: 5vw;
   }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
@@ -754,14 +749,44 @@
       padding-block: calc(var(--spacing) * 12);
     }
   }
+  .md\:top-\[8vh\] {
+    @media (width >= 48rem) {
+      top: 8vh;
+    }
+  }
+  .md\:bottom-\[5vh\] {
+    @media (width >= 48rem) {
+      bottom: 5vh;
+    }
+  }
+  .md\:mb-0 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:mb-40 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 40);
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
     }
   }
-  .md\:h-\[50vh\] {
+  .md\:w-20 {
     @media (width >= 48rem) {
-      height: 50vh;
+      width: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:w-\[20vw\] {
+    @media (width >= 48rem) {
+      width: 20vw;
     }
   }
   .md\:grid-cols-2 {
@@ -807,6 +832,16 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .md\:text-\[2vw\] {
+    @media (width >= 48rem) {
+      font-size: 2vw;
+    }
+  }
+  .md\:text-\[4vw\] {
+    @media (width >= 48rem) {
+      font-size: 4vw;
+    }
+  }
   .md\:text-\[26px\] {
     @media (width >= 48rem) {
       font-size: 26px;
@@ -820,11 +855,6 @@
   .lg\:h-\[45\%\] {
     @media (width >= 64rem) {
       height: 45%;
-    }
-  }
-  .lg\:h-\[70vh\] {
-    @media (width >= 64rem) {
-      height: 70vh;
     }
   }
   .lg\:w-5\/12 {
@@ -875,6 +905,46 @@
   .\32 xl\:p-\[60px\] {
     @media (width >= 96rem) {
       padding: 60px;
+    }
+  }
+  .portrait\:h-\[350px\] {
+    @media (orientation: portrait) {
+      height: 350px;
+    }
+  }
+  .portrait\:md\:max-lg\:h-\[550px\] {
+    @media (orientation: portrait) {
+      @media (width >= 48rem) {
+        @media (width < 64rem) {
+          height: 550px;
+        }
+      }
+    }
+  }
+  .portrait\:lg\:h-\[650px\] {
+    @media (orientation: portrait) {
+      @media (width >= 64rem) {
+        height: 650px;
+      }
+    }
+  }
+  .landscape\:h-\[550px\] {
+    @media (orientation: landscape) {
+      height: 550px;
+    }
+  }
+  .landscape\:lg\:h-\[750px\] {
+    @media (orientation: landscape) {
+      @media (width >= 64rem) {
+        height: 750px;
+      }
+    }
+  }
+  .landscape\:2xl\:h-\[70vh\] {
+    @media (orientation: landscape) {
+      @media (width >= 96rem) {
+        height: 70vh;
+      }
     }
   }
   .dark\:bg-\[\#203c5c\]\/30 {

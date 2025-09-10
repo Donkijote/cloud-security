@@ -11,14 +11,15 @@
   <body>
     <header class="fixed top-0 left-0 w-full z-50">
       <div id="navbar" class="transition-all text-slate-200 ease-in-out">
-        <nav class="flex items-center justify-between p-4 mx-auto max-w-7xl">
+        <nav
+          class="flex items-center justify-between py-2 md:py-4 px-6 mx-auto max-w-7xl"
+        >
           <!-- Logo -->
           <a href="/" class="text-xl font-bold dark:text-white">
             <img
               src="https://cloud-security.cl/wp-content/uploads/2025/07/cropped-LOGO-CLOUD-SECURITY.png"
               alt="could-security"
-              width="80"
-              class="invert-[1] brightness-0 navbar-invert-[0] navbar-brightness-100"
+              class="md:w-20 w-14 invert-[1] brightness-0 navbar-invert-[0] navbar-brightness-100"
             />
           </a>
 
@@ -60,7 +61,7 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="relative h-[40vh] md:h-[50vh] lg:h-[70vh] flex items-center justify-center text-center overflow-hidden"
+      class="relative portrait:h-[350px] portrait:md:max-lg:h-[550px] portrait:lg:h-[650px] landscape:h-[550px] landscape:lg:h-[750px] landscape:2xl:h-[70vh] flex items-center justify-center text-center overflow-hidden"
     >
       <!-- Background Image -->
       <img
@@ -71,29 +72,32 @@
 
       <!-- Overlay (frosted glass gradient) -->
       <div
-        class="absolute top-[8vh] w-[80vw] bottom-[5vh] backdrop-blur-[2px] border border-white/5 rounded-4xl"
+        class="absolute top-[6vh] md:top-[8vh] bottom-[3vh] md:bottom-[5vh] w-[80vw] backdrop-blur-[2px] border border-white/5 rounded-4xl"
       >
         <!-- Content -->
         <div
           class="relative flex flex-col justify-evenly z-10 w-full h-full px-6 text-white"
         >
-          <h1 class="text-[4vw] font-extrabold leading-tight">
+          <h1 class="text-[5vw] md:text-[4vw] font-extrabold leading-tight">
             Protege lo que más Importa
           </h1>
-          <p class="text-[2vw] md:text-xl text-slate-200">
+          <p class="text-[3.5vw] md:text-[2vw] md:text-xl text-slate-200">
             Ofrecemos servicios especializados en
             <span class="font-semibold">
               CCTV • Alarmas de incdendios • Alarmas de monitoreo • Cercado
               Eléctrico • Control de Acceso</span
-            >, complementos esenciales para crear soluciones eficaces de
-            seguridad.
+            >
+            <span class="hidden md:block">
+              complementos esenciales para crear soluciones eficaces de
+              seguridad.
+            </span>
           </p>
 
           <!-- CTAs -->
           <div class="flex flex-wrap gap-4 justify-center">
             <a
               href="#contact"
-              class="bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/30 px-2 py-2 md:px-8 md:py-4 rounded-xl text-white font-semibold text-md md:text-2xl uppercase"
+              class="bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/30 px-2 py-2 md:px-8 md:py-4 rounded-xl text-white font-semibold text-sm md:text-2xl uppercase"
             >
               Contáctanos
             </a>
@@ -102,7 +106,7 @@
             <img
               src="https://cloud-security.cl/wp-content/uploads/2025/07/cropped-LOGO-CLOUD-SECURITY.png"
               alt="could-security"
-              class="w-[20vw]"
+              class="w-[18vw] md:w-[20vw]"
               style="filter: brightness(0) invert(1)"
             />
           </div>
@@ -305,8 +309,8 @@
     <section id="contact" class="text-[#203c5c] py-20 relative">
       <div class="max-w-7xl mx-auto px-6">
         <div class="flex flex-wrap items-center">
-          <div class="w-full lg:w-7/12 xl:w-8/12 px-4">
-            <div class="mb-40 text-[#203c5c]">
+          <div class="w-full lg:w-7/12 xl:w-8/12 px-4 mb-20 md:mb-0">
+            <div class="mb-10 md:mb-40 text-[#203c5c]">
               <p class="font-semibold">CONTÁCTANOS</p>
               <h1 class="font-bold text-3xl">
                 Nos encantaría conocer más de tus proyectos...
@@ -377,9 +381,7 @@
                 </div>
                 <div class="flex flex-col">
                   <h3 class="text-lg font-semibold mb-5">Contacto</h3>
-                  <p class="truncate">
-                    Nuestro equipo se pondrá en contacto contigo.
-                  </p>
+                  <p>Nuestro equipo se pondrá en contacto contigo.</p>
                   <a
                     href="mailto:contacto@cloud-security.cl"
                     class="hover:underline"
