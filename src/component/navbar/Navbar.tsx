@@ -4,6 +4,8 @@ import { clsx } from "clsx";
 
 import { Link } from "@tanstack/react-router";
 
+import { ThemeToggle } from "@/component/theme/ThemToggle";
+
 const NAV_LINKS = [
   { to: "/", label: "Home", hash: "home" },
   { to: "/", label: "Services", hash: "services" },
@@ -29,7 +31,7 @@ export const Navbar = () => {
         "text-slate-900 dark:text-slate-100",
         "border-b backdrop-blur-md transition-[background-color,border-color,box-shadow] duration-300",
         {
-          "bg-white/40 dark:bg-slate-900/40 border-transparent shadow-none":
+          "bg-[var(--color-surface)] dark:bg-slate-900/40 border-transparent shadow-none":
             !scrolled,
           "bg-white/70 dark:bg-slate-900/70 border-slate-200/60 dark:border-slate-800/60 shadow-md":
             scrolled,
@@ -44,7 +46,7 @@ export const Navbar = () => {
               alt="could-security"
               width="80"
               className={
-                "invert-[1] brightness-0 navbar-invert-[0] navbar-brightness-100"
+                "dark:invert-[1] dark:brightness-0 dark:navbar-invert-[0] dark:navbar-brightness-100"
               }
             />
           </Link>
@@ -74,6 +76,8 @@ export const Navbar = () => {
             ))}
           </ul>
         </div>
+
+        <ThemeToggle />
       </div>
     </nav>
   );
