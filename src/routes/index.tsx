@@ -45,14 +45,29 @@ function App() {
       </Hero>
       <div className="relative z-10 px-4 sm:px-6 lg:px-8 xl:px-12 pt-[420px] lg:pt-[520px] xl:pt-[600px] pb-16">
         <div className="grid gap-16 grid-cols-1">
-          <section id={"home"} className="space-y-4">
-            <h2 className="text-xl font-semibold text-slate-100">
-              Why this platform
-            </h2>
-            <p className="text-slate-300 text-sm sm:text-base">
-              Short intro about your cloud security offering…
-            </p>
+          <section
+            id={"home"}
+            className="w-full px-4 py-12 sm:py-16 lg:py-20 text-[var(--color-text)]"
+          >
+            <div className="mx-auto max-w-5xl text-center space-y-6">
+              <div className="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium uppercase tracking-wide bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text-muted)]">
+                Reliable protection for real-world spaces
+              </div>
+
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--color-text)]">
+                Smart security systems for homes and businesses
+              </h2>
+
+              <p className="mx-auto max-w-3xl text-sm sm:text-base leading-relaxed text-[var(--color-text-muted)]">
+                We design, install and maintain complete security solutions:
+                CCTV cameras, alarm systems, fire detection, access control and
+                structured electrical circuits. Our goal is simple — keep your
+                people, property and infrastructure protected 24/7 with systems
+                that are reliable, easy to use and tailored to your space.
+              </p>
+            </div>
           </section>
+
           <section id={"services"} className="space-y-6">
             <h2 className="text-xl font-semibold text-slate-100">Services</h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
