@@ -27,10 +27,11 @@ export const Navbar = () => {
       className={clsx(
         "sticky top-0 z-50 px-4 sm:px-6 lg:px-8 xl:px-12 min-h-[80px] flex items-center transition-all duration-300",
         "text-slate-900 dark:text-slate-100",
-        "border-b transition-[background-color,border-color,box-shadow,backdrop-filter] duration-300",
+        "border-b backdrop-blur-md transition-[background-color,border-color,box-shadow] duration-300",
         {
-          "bg-[var(--color-surface)] border-b-transparent": !scrolled,
-          "bg-white/70 dark:bg-slate-900/70 backdrop-blur-md shadow-md border-b-slate-200/60 dark:border-b-slate-800/60":
+          "bg-white/40 dark:bg-slate-900/40 border-transparent shadow-none":
+            !scrolled,
+          "bg-white/70 dark:bg-slate-900/70 border-slate-200/60 dark:border-slate-800/60 shadow-md":
             scrolled,
         },
       )}
