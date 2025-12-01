@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handler = () => {
-      setScrolled(window.scrollY > 80);
+      setScrolled(window.scrollY > 60);
     };
     window.addEventListener("scroll", handler);
     return () => window.removeEventListener("scroll", handler);
@@ -27,13 +27,13 @@ export const Navbar = () => {
   return (
     <nav
       className={clsx(
-        "sticky top-0 z-50 px-4 sm:px-6 lg:px-8 xl:px-12 min-h-[80px] flex items-center transition-all duration-300",
-        "text-slate-900 dark:text-slate-100",
-        "border-b backdrop-blur-md transition-[background-color,border-color,box-shadow] duration-300",
+        "sticky top-0 z-50 px-4 sm:px-6 lg:px-8 xl:px-12 min-h-[80px] flex items-center transition-all duration-100",
+        "text-slate-100",
+        "border-b backdrop-blur-md transition-[background-color,border-color,box-shadow] duration-100",
         {
-          "bg-[var(--color-surface)] dark:bg-slate-900/40 border-transparent shadow-none":
+          "bg-transparent dard:bg-[var(--color-surface)] dark:bg-slate-900/40 border-transparent shadow-none":
             !scrolled,
-          "bg-white/70 dark:bg-slate-900/70 border-slate-200/60 dark:border-slate-800/60 shadow-md":
+          "bg-white/70 dark:bg-slate-900/70 border-slate-200/60 dark:border-slate-800/60 shadow-md text-slate-900 dark:text-slate-100":
             scrolled,
         },
       )}
@@ -45,9 +45,13 @@ export const Navbar = () => {
               src="https://cloud-security.cl/wp-content/uploads/2025/07/cropped-LOGO-CLOUD-SECURITY.png"
               alt="could-security"
               width="80"
-              className={
-                "dark:invert-[1] dark:brightness-0 dark:navbar-invert-[0] dark:navbar-brightness-100"
-              }
+              className={clsx(
+                "transition-all duration-100",
+                "dark:invert-[1] dark:brightness-0 dark:navbar-invert-[0] dark:navbar-brightness-100",
+                {
+                  "brightness-0 invert-[1]": !scrolled,
+                },
+              )}
             />
           </Link>
         </div>
