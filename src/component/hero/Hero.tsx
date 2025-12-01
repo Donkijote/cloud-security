@@ -22,10 +22,8 @@ export const Hero = ({ imageSrc, imageAlt = "", children }: HeroProps) => {
       />
 
       {children && (
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/50 to-transparent">
-          <div className="mx-auto flex h-full max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div className="mt-auto flex flex-col gap-3 pb-10">{children}</div>
-          </div>
+        <div className="absolute inset-0 z-20 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+          {children}
         </div>
       )}
     </section>
