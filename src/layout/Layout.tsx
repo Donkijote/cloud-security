@@ -4,13 +4,14 @@ import { Navbar } from "@/component/navbar/Navbar";
 
 export const Layout = ({ children }: PropsWithChildren) => {
 	return (
-		<div className="grid min-h-screen grid-rows-[auto_1fr_auto]">
+		<div className="grid min-h-screen grid-rows-[auto_1fr_auto] bg-[var(--color-bg)] text-[var(--color-text)]">
 			<Navbar />
-			<main className="bg-gray-100 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-6">
+
+			<main className="px-4 sm:px-6 lg:px-8 xl:px-12 py-6 bg-[var(--color-surface)] text-[var(--color-text)]">
 				{children}
 			</main>
 
-			<footer className="bg-gray-900 text-white px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-4 text-center">
+			<footer className="px-4 sm:px-6 lg:px-8 xl:px-12 py-4 text-center bg-[var(--color-primary-800)] text-[var(--color-text)]">
 				<p>My Footer © {new Date().getFullYear()}</p>
 			</footer>
 		</div>
