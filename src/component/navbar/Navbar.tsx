@@ -5,10 +5,10 @@ import { clsx } from "clsx";
 import { Link } from "@tanstack/react-router";
 
 const NAV_LINKS = [
-  { href: "#home", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#about", label: "About Us" },
-  { href: "#contact", label: "Contact" },
+  { to: "/", label: "Home", hash: "home" },
+  { to: "/", label: "Services", hash: "services" },
+  { to: "/", label: "About Us", hash: "about" },
+  { to: "/", label: "Contact", hash: "contact" },
 ];
 
 export const Navbar = () => {
@@ -27,8 +27,9 @@ export const Navbar = () => {
       className={clsx(
         "sticky top-0 z-50 px-4 sm:px-6 lg:px-8 xl:px-12 min-h-[80px] flex items-center transition-all duration-300",
         "text-slate-900 dark:text-slate-100",
+        "border-b transition-[background-color,border-color,box-shadow,backdrop-filter] duration-300",
         {
-          "bg-[var(--color-surface)]": !scrolled,
+          "bg-[var(--color-surface)] border-b-transparent": !scrolled,
           "bg-white/70 dark:bg-slate-900/70 backdrop-blur-md shadow-md border-b-slate-200/60 dark:border-b-slate-800/60":
             scrolled,
         },
@@ -51,10 +52,20 @@ export const Navbar = () => {
         <div className="flex-1 flex justify-center">
           <ul className="flex gap-8 text-sm font-medium">
             {NAV_LINKS.map((link) => (
-              <li key={link.href}>
+              <li key={link.label}>
                 <Link
-                  to={link.href}
-                  className="relative transition-colors hover:text-blue-600 dark:hover:text-blue-400"
+                  to={link.to}
+                  hash={link.hash}
+                  className={clsx(
+                    "relative transition-colors",
+                    "hover:text-blue-600 dark:hover:text-blue-400",
+                  )}
+                  activeOptions={{
+                    includeHash: true,
+                  }}
+                  activeProps={{
+                    className: "text-blue-600 dark:text-blue-400 font-semibold",
+                  }}
                 >
                   {link.label}
                 </Link>
