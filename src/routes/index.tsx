@@ -10,39 +10,40 @@ function App() {
   return (
     <div className="-mt-20">
       <Hero imageSrc={heroImg} imageAlt="Cloud security hero image">
-        <div className="max-w-3xl w-full bg-white/10 backdrop-blur-sm border border-white/20 shadow-2xl rounded-2xl p-6 sm:p-10 text-center flex flex-col items-center gap-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white drop-shadow-lg">
+        <div className="max-w-2xl w-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl rounded-2xl px-3 py-4 sm:px-6 sm:py-6 md:px-8 md:py-8 text-center flex flex-col items-center gap-4 sm:gap-5">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white drop-shadow-lg leading-tight">
             Protege lo que más Importa
           </h1>
 
-          <p className="text-sm sm:text-base text-slate-200/90 leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base text-slate-200/90 leading-relaxed max-w-md">
             Ofrecemos servicios especializados en{" "}
             <span className="font-semibold">
               CCTV • Alarmas de incendios • Alarmas de monitoreo • Cercado
               Eléctrico • Control de Acceso
             </span>
-            <span className="hidden md:block">
+            <span className="hidden lg:inline">
+              {" "}
               complementos esenciales para crear soluciones eficaces de
               seguridad.
             </span>
           </p>
+
           <Link
             to={"/"}
             hash={"contact"}
-            className="cursor-pointer mt-2 inline-flex items-center justify-center px-6 py-2.5 rounded-xl bg-white/15 hover:bg-white/20 border border-white/30 text-white font-medium backdrop-blur transition"
+            className="cursor-pointer inline-flex items-center justify-center px-5 py-2 rounded-xl bg-white/15 hover:bg-white/20 border border-white/30 text-white font-medium backdrop-blur transition text-xs sm:text-sm md:text-base"
           >
             Get started
           </Link>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <img
-              src="https://cloud-security.cl/wp-content/uploads/2025/07/cropped-LOGO-CLOUD-SECURITY.png"
-              alt="could-security"
-              className="w-[10vw] invert-[1] brightness-0"
-            />
-          </div>
+
+          <img
+            src="https://cloud-security.cl/wp-content/uploads/2025/07/cropped-LOGO-CLOUD-SECURITY.png"
+            alt="cloud-security"
+            className="hidden sm:block h-8 md:h-10 lg:h-12 invert-[1] brightness-0 mt-1"
+          />
         </div>
       </Hero>
-      <div className="relative z-10 px-4 sm:px-6 lg:px-8 xl:px-12 pt-[260px] sm:pt-[340px] md:pt-[420px] lg:pt-[520px] xl:pt-[600px] pb-16">
+      <div className="relative z-10 px-4 sm:px-6 lg:px-8 xl:px-12 pt-[420px] lg:pt-[520px] xl:pt-[600px] pb-16">
         <div className="grid gap-16 grid-cols-1">
           <section id={"home"} className="space-y-4">
             <h2 className="text-xl font-semibold text-slate-100">
