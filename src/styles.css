@@ -1,5 +1,61 @@
 @import "tailwindcss";
 
+:root {
+  --color-primary: #203c5c;
+
+  /* Tints (lighter versions) */
+  --color-primary-50:  #f1f4f7;
+  --color-primary-100: #dce4ed;
+  --color-primary-200: #bcc9db;
+  --color-primary-300: #94a7c3;
+  --color-primary-400: #6b84aa;
+
+  /* Base + Shades */
+  --color-primary-500: #203c5c; /* base */
+  --color-primary-600: #1b334d;
+  --color-primary-700: #162a3f;
+  --color-primary-800: #122233;
+  --color-primary-900: #0d1a26;
+
+  /* Extended neutrals (light mode) */
+  --color-bg: #ffffff;
+  --color-surface: #f7f8fa;
+  --color-text: #1a1a1a;
+  --color-text-muted: #4d5566;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #203c5c;
+
+    /* Dark tints shift slightly brighter for contrast */
+    --color-primary-50:  #1b2f47;
+    --color-primary-100: #223b59;
+    --color-primary-200: #2b4a6f;
+    --color-primary-300: #355a86;
+    --color-primary-400: #3f6a9e;
+
+    /* Base + darker tones */
+    --color-primary-500: #203c5c; /* base */
+    --color-primary-600: #182d44;
+    --color-primary-700: #112133;
+    --color-primary-800: #0b1826;
+    --color-primary-900: #070f17;
+
+    /* Extended neutrals (dark mode) */
+    --color-bg: #0f141a;
+    --color-surface: #161d26;
+    --color-text: #e5e9f0;
+    --color-text-muted: #a7b1c2;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   @apply m-0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -7,9 +63,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
