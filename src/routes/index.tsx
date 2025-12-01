@@ -70,13 +70,54 @@ function App() {
           </section>
 
           <Services />
-          <section id={"about"} className="space-y-4">
-            <h2 className="text-xl font-semibold text-slate-100">About us</h2>
-            <p className="text-slate-300 text-sm sm:text-base">
-              A short story about your background, why you focus on cloud
-              security, and what makes you different.
-            </p>
+          <section
+            id={"about"}
+            className="py-20 md:py-28 text-[var(--color-text)]"
+          >
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid items-start gap-12 md:grid-cols-2">
+                <div className="relative h-72 sm:h-80 md:h-full rounded-3xl overflow-hidden shadow-lg bg-[var(--color-surface)]">
+                  <img
+                    src="https://cloud-security.cl/wp-content/uploads/2025/07/about-img-1.jpg"
+                    alt="Equipo de seguridad trabajando en terreno"
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-[var(--color-primary)]/20" />
+                </div>
+
+                <div className="flex flex-col justify-start">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-primary)] mb-3 text-center">
+                    ¿Quiénes somos?
+                  </p>
+
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
+                    Más de 25 años de experiencia en seguridad integral
+                  </h2>
+
+                  <p className="mt-2 text-[var(--color-text-muted)] leading-relaxed text-left">
+                    En{" "}
+                    <span className="font-semibold text-[var(--color-text)]">
+                      Cloud Security
+                    </span>{" "}
+                    cuidamos lo que más te importa.
+                  </p>
+
+                  <p className="mt-4 text-[var(--color-text-muted)] leading-relaxed text-left">
+                    Somos especialistas en seguridad electrónica y ofrecemos
+                    soluciones integrales: diseño de proyectos, instalaciones en
+                    las distintas líneas de seguridad, implementación a la
+                    medida y soporte continuo.
+                  </p>
+
+                  <p className="mt-4 text-[var(--color-text-muted)] leading-relaxed text-left">
+                    Con tecnología certificada, equipos profesionales y un trato
+                    personalizado, tu seguridad está en las mejores manos.
+                  </p>
+                </div>
+              </div>
+            </div>
           </section>
+
           <section id={"contact"} className="space-y-6">
             <h2 className="text-xl font-semibold text-slate-100">Contact</h2>
             <p className="text-slate-300 text-sm sm:text-base">
