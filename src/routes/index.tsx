@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { Hero } from "@/component/hero/Hero";
+import { Services } from "@/component/services/Services";
 
 import heroImg from "/images/hero.png";
 
@@ -43,7 +44,7 @@ function App() {
           />
         </div>
       </Hero>
-      <div className="relative z-10 px-4 sm:px-6 lg:px-8 xl:px-12 pt-[420px] lg:pt-[520px] xl:pt-[600px] pb-16">
+      <div className="relative z-10 pt-[420px] lg:pt-[520px] xl:pt-[600px] pb-16">
         <div className="grid gap-16 grid-cols-1">
           <section
             id={"home"}
@@ -68,35 +69,7 @@ function App() {
             </div>
           </section>
 
-          <section id={"services"} className="space-y-6">
-            <h2 className="text-xl font-semibold text-slate-100">Services</h2>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {/* Replace with real service cards */}
-              <article className="rounded-xl border border-slate-800 bg-slate-900/40 p-4">
-                <h3 className="font-medium text-slate-50">
-                  Cloud posture review
-                </h3>
-                <p className="mt-2 text-sm text-slate-300">
-                  Baseline assessment of your AWS/Azure/GCP environments.
-                </p>
-              </article>
-              <article className="rounded-xl border border-slate-800 bg-slate-900/40 p-4">
-                <h3 className="font-medium text-slate-50">Threat monitoring</h3>
-                <p className="mt-2 text-sm text-slate-300">
-                  Continuous detection and alerting on critical
-                  misconfigurations.
-                </p>
-              </article>
-              <article className="rounded-xl border border-slate-800 bg-slate-900/40 p-4">
-                <h3 className="font-medium text-slate-50">
-                  Incident readiness
-                </h3>
-                <p className="mt-2 text-sm text-slate-300">
-                  Playbooks, simulations, and hardening to reduce impact.
-                </p>
-              </article>
-            </div>
-          </section>
+          <Services />
           <section id={"about"} className="space-y-4">
             <h2 className="text-xl font-semibold text-slate-100">About us</h2>
             <p className="text-slate-300 text-sm sm:text-base">
