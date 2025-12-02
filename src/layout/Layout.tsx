@@ -8,7 +8,7 @@ export const Layout = ({ children }: PropsWithChildren) => {
     <div className="grid min-h-screen grid-rows-[auto_1fr_auto] bg-[var(--color-bg)] text-[var(--color-text)]">
       <Navbar />
 
-      <main className="py-6 bg-[var(--color-surface)] text-[var(--color-text)]">
+      <main className="bg-[var(--color-surface)] text-[var(--color-text)]">
         {children}
       </main>
 

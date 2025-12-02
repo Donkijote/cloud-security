@@ -43,7 +43,7 @@ function App() {
           />
         </div>
       </Hero>
-      <div className="relative z-10 pt-[420px] lg:pt-[520px] xl:pt-[600px] pb-16">
+      <div className="relative z-10 pt-[420px] lg:pt-[520px] xl:pt-[600px]">
         <div className="grid gap-16 grid-cols-1">
           <section
             id={"home"}
