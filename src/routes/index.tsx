@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
+import { Contact } from "@/component/contact/Contact";
 import { Hero } from "@/component/hero/Hero";
 import { Services } from "@/component/services/Services";
 
@@ -118,31 +119,7 @@ function App() {
             </div>
           </section>
 
-          <section id={"contact"} className="space-y-6">
-            <h2 className="text-xl font-semibold text-slate-100">Contact</h2>
-            <p className="text-slate-300 text-sm sm:text-base">
-              How people can reach you or book a call.
-            </p>
-
-            <form className="grid gap-4 sm:max-w-lg">
-              <input
-                type="email"
-                placeholder="Work email"
-                className="rounded-lg border border-slate-700 bg-slate-900/60 px-3 py-2 text-sm outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
-              />
-              <textarea
-                rows={4}
-                placeholder="Tell us briefly about your environment and needs…"
-                className="rounded-lg border border-slate-700 bg-slate-900/60 px-3 py-2 text-sm outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
-              />
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium bg-sky-500 text-slate-950 hover:bg-sky-400 transition"
-              >
-                Send message
-              </button>
-            </form>
-          </section>
+          <Contact />
         </div>
       </div>
     </div>
