@@ -1,10 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
+import { getServices } from "@/api/get-services";
 import { Contact } from "@/component/contact/Contact";
 import { Hero } from "@/component/hero/Hero";
 import { Services } from "@/component/services/Services";
 
-export const Route = createFileRoute("/")({ component: App });
+export const Route = createFileRoute("/")({
+  component: App,
+  loader: async () => await getServices(),
+});
 
 function App() {
   return (
