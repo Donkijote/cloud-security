@@ -4,14 +4,12 @@ import { Contact } from "@/component/contact/Contact";
 import { Hero } from "@/component/hero/Hero";
 import { Services } from "@/component/services/Services";
 
-import heroImg from "/images/hero.png";
-
 export const Route = createFileRoute("/")({ component: App });
 
 function App() {
   return (
     <div className="-mt-20">
-      <Hero imageSrc={heroImg} imageAlt="Cloud security hero image">
+      <Hero imageSrc={"/images/hero.png"} imageAlt="Cloud security hero image">
         <div className="max-w-2xl w-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl rounded-2xl px-3 py-4 sm:px-6 sm:py-6 md:px-8 md:py-8 text-center flex flex-col items-center gap-4 sm:gap-5">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white drop-shadow-lg leading-tight">
             Protege lo que más Importa
@@ -87,7 +85,7 @@ function App() {
                 </div>
 
                 <div className="flex flex-col justify-start">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-primary)] mb-3 text-center">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-primary)] dark:text-[var(--color-text-muted)] mb-3 text-center">
                     ¿Quiénes somos?
                   </p>
 
