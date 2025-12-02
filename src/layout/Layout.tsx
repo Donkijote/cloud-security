@@ -1,8 +1,7 @@
 import type { PropsWithChildren } from "react";
 
+import { Footer } from "@/component/footer/Footer";
 import { Navbar } from "@/component/navbar/Navbar";
-
-const year = new Date().getFullYear();
 
 export const Layout = ({ children }: PropsWithChildren) => {
   return (
@@ -13,9 +12,7 @@ export const Layout = ({ children }: PropsWithChildren) => {
         {children}
       </main>
 
-      <footer className="px-4 sm:px-6 lg:px-8 xl:px-12 py-4 text-center bg-[var(--color-primary-800)] text-[var(--color-text)]">
-        <p>My Footer © {year}</p>
-      </footer>
+      <Footer />
     </div>
   );
 };
