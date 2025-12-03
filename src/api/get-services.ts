@@ -4,11 +4,19 @@ import fs from "node:fs";
 
 const SERVICES_DATA = "src/data/services.json";
 
+type ServiceSection = {
+  imgUrl: string;
+  title: string;
+  description: string;
+};
+
 type Service = {
   id: string;
   imgUrl: string;
   title: string;
   description: string;
+  heroUrl: string;
+  sections: Array<ServiceSection>;
 };
 
 const readServices = async (): Promise<Array<Service>> => {
