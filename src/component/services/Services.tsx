@@ -1,4 +1,4 @@
-import { getRouteApi } from "@tanstack/react-router";
+import { getRouteApi, Link } from "@tanstack/react-router";
 
 export const Services = () => {
   const services = getRouteApi("/").useLoaderData();
@@ -22,8 +22,10 @@ export const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {services.map(({ id, imgUrl, title, description }) => (
-            <div
+            <Link
               key={id}
+              to={"/services/$id"}
+              params={{ id }}
               className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform hover:scale-[1.03]"
             >
               <img
@@ -37,7 +39,7 @@ export const Services = () => {
                 </h3>
                 <p className="mt-2 text-sm text-slate-200">{description}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
