@@ -42,7 +42,10 @@ function ServicePage() {
                 <div
                   className={clsx(
                     "relative h-72 sm:h-80 md:h-full rounded-3xl overflow-hidden shadow-lg bg-[var(--color-surface)]",
-                    `order-${index + 1}`,
+                    {
+                      "order-1": index % 2 === 0,
+                      "order-2": index % 2 !== 0,
+                    },
                   )}
                 >
                   <img
@@ -53,7 +56,12 @@ function ServicePage() {
                   <div className="absolute inset-0 bg-[var(--color-primary)]/20" />
                 </div>
 
-                <div className="flex flex-col justify-start">
+                <div
+                  className={clsx("flex flex-col justify-start", {
+                    "order-2": index % 2 === 0,
+                    "order-1": index % 2 !== 0,
+                  })}
+                >
                   <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
                     {section.title}
                   </h2>
