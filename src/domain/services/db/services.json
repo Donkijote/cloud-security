@@ -112,5 +112,24 @@
         "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/producto-2-citofonia.jpg"
       }
     ]
+  },
+  {
+    "id": "automatization",
+    "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/producto-1-automatizacion.jpg",
+    "title": "Automatización",
+    "description": "La combinación de sistemas de automatización del hogar.",
+    "heroUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/principal-automatizacion.jpg",
+    "sections": [
+      {
+        "title": "Seguridad Inteligente con Automatización del Hogar",
+        "description": "La combinación de sistemas de automatización del hogar con tecnología de seguridad avanzada permite crear escenarios automáticos y programados que refuerzan la protección y previenen riesgos de manera eficiente.",
+        "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/producto-1-automatizacion.jpg"
+      },
+      {
+        "title": "",
+        "description": "Funciones como el encendido de luces, apertura de puertas, apagado de electrodomésticos o la activación y desactivación de alarmas pueden ejecutarse de forma automática para simular presencia, disuadir intrusos y mejorar el control del entorno, incluso a distancia.",
+        "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/producto-2-automatizacion.jpg"
+      }
+    ]
   }
 ]
