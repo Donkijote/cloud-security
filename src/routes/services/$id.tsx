@@ -53,7 +53,7 @@ function ServicePage() {
                     alt={section.title}
                     className="h-full w-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-[var(--color-primary)]/20" />
+                  <div className="absolute inset-0 bg-[var(--color-primary)]/10" />
                 </div>
 
                 <div
