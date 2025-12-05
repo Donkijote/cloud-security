@@ -17,7 +17,7 @@ function ServicePage() {
   const service = Route.useLoaderData();
 
   return (
-    <div className="-mt-20">
+    <div className="-mt-20 bg-[var(--color-bg)]">
       <Hero imageSrc={service.heroUrl} imageAlt={service.title} />
       <div className="relative z-10 pt-[420px] lg:pt-[520px] xl:pt-[600px]">
         <div className="grid gap-16 grid-cols-1">
