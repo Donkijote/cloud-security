@@ -58,20 +58,20 @@
   },
   {
     "id": "intruder-alarm",
-    "imgUrl": "https://www.ruvaseguridad.com/blog/falsas-creencias-sobre-las-alarmas-para-casa/falsas-creencias-sobre-las-alarmas-para-casa.jpg",
+    "imgUrl": "/images/alarm/alarm-thumbnail.png",
     "title": "Alarmas Antirrobo",
     "description": "Sistemas confiables para proteger tu propiedad contra robos.",
-    "heroUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/principal-alarma-2.jpg",
+    "heroUrl": "/images/alarm/hero.png",
     "sections": [
       {
         "title": "Protege lo que más valoras con tecnología de seguridad de última generación.",
         "description": "En Cloud-Security, te ofrecemos sistemas avanzados de detección de intrusos diseñados para brindarte control total desde la nube. Contamos con soluciones cableadas, inalámbricas e híbridas, adaptables a entornos residenciales, comerciales e industriales..",
-        "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/producto-1-alarma.jpg"
+        "imgUrl": "/images/alarm/alarm-1.png"
       },
       {
         "title": "Control a distancia.",
         "description": "Esta tecnología inteligente te permite estar siempre conectado a tu sistema de seguridad desde tu smartphone, tablet o computador, brindándote tranquilidad y control total las 24 horas del día, desde cualquier parte del mundo.",
-        "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/producto-2-alarma-1.jpg"
+        "imgUrl": "/images/alarm/alarm-2.png"
       }
     ]
   },
