@@ -39,20 +39,20 @@
   },
   {
     "id": "electric-fences",
-    "imgUrl": "https://krseguro.wordpress.com/wp-content/uploads/2020/02/27082017122547-cercos-electricos-deta.jpg?w=800",
+    "imgUrl": "/images/electric/electric-thumbnail.png",
     "title": "Cercos Eléctricos",
     "description": "Protección perimetral efectiva que disuade intrusos.",
-    "heroUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/principal-cerco-electrico.jpg",
+    "heroUrl": "/images/electric/hero.png",
     "sections": [
       {
         "title": "Tu Primera Línea de Defensa.",
         "description": "En Cloud-Security te ofrecemos sistemas de cerco eléctrico de alto rendimiento, diseñados para uso residencial, industrial y ganadero.\nNuestras soluciones proporcionan una barrera física disuasiva que retrasa cualquier intento de intrusión, mientras tú mantienes el control total a través de una app de monitoreo en tiempo real.",
-        "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/cerco-energizador-celular.jpg"
+        "imgUrl": "/images/electric/electric-1.png"
       },
       {
         "title": "Certificación SEC",
         "description": "Nuestros cercos residenciales, empresariales y agrícolas cuentan con la certificación oficial exigida por la Superintendencia de Electricidad y Combustible.",
-        "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/PLACA-cerco-electrico-.jpg"
+        "imgUrl": "/images/electric/electric-2.png"
       }
     ]
   },
