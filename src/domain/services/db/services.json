@@ -77,20 +77,20 @@
   },
   {
     "id": "access-control-systems",
-    "imgUrl": "https://fermalux.com/wp-content/uploads/2023/12/control-de-accesos-dispositivos.webp",
+    "imgUrl": "/images/access/access-thumbnail.png",
     "title": "Control de Acceso",
     "description": "Sistemas inteligentes para gestionar entradas de forma segura.",
-    "heroUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/principal-coltrol-acceso.jpg",
+    "heroUrl": "/images/access/hero.png",
     "sections": [
       {
         "title": "",
         "description": "Optimiza el ingreso a tus instalaciones con nuestro sistema de control de acceso automatizado. Autoriza o restringe el paso a zonas específicas de forma rápida, segura y personalizada.",
-        "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/producto-1-control-acceso.jpg"
+        "imgUrl": "/images/access/access-1.png"
       },
       {
         "title": "",
         "description": "Mejora la eficiencia operativa y refuerza la seguridad en tiempo real, adaptado a las necesidades de tu organización.",
-        "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/producto-2-control-acceso.jpg"
+        "imgUrl": "/images/access/access-2.png"
       }
     ]
   },
