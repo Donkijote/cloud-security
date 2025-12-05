@@ -12,9 +12,9 @@ export const Footer = () => {
           <div className="space-y-6 flex flex-col items-center">
             <Link to="/" className="inline-flex items-center justify-center">
               <img
-                src="https://cloud-security.cl/wp-content/uploads/2025/07/cropped-LOGO-CLOUD-SECURITY.png"
+                src="/logo.png"
                 alt="could-security"
-                width="120"
+                width={"120"}
                 className={clsx(
                   "transition-all duration-100",
                   "dark:invert-[1] dark:brightness-0 dark:navbar-invert-[0] dark:navbar-brightness-100",

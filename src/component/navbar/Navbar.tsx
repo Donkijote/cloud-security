@@ -42,9 +42,9 @@ export const Navbar = () => {
         <div className="flex items-center gap-2">
           <Link to={"/"}>
             <img
-              src="https://cloud-security.cl/wp-content/uploads/2025/07/cropped-LOGO-CLOUD-SECURITY.png"
+              src="/logo.png"
               alt="could-security"
-              width="80"
+              width={"80"}
               className={clsx(
                 "transition-all duration-100",
                 "dark:invert-[1] dark:brightness-0 dark:navbar-invert-[0] dark:navbar-brightness-100",

@@ -41,7 +41,7 @@ function App() {
           </Link>
 
           <img
-            src="https://cloud-security.cl/wp-content/uploads/2025/07/cropped-LOGO-CLOUD-SECURITY.png"
+            src="/logo.png"
             alt="cloud-security"
             className="hidden sm:block h-8 md:h-10 lg:h-12 invert-[1] brightness-0 mt-1"
           />
