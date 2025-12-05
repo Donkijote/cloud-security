@@ -81,7 +81,7 @@ function App() {
               <div className="grid items-start gap-12 md:grid-cols-2">
                 <div className="relative h-72 sm:h-80 md:h-full rounded-3xl overflow-hidden shadow-lg bg-[var(--color-surface)]">
                   <img
-                    src="https://cloud-security.cl/wp-content/uploads/2025/07/about-img-1.jpg"
+                    src="/images/about.png"
                     alt="Equipo de seguridad trabajando en terreno"
                     className="h-full w-full object-cover"
                   />
