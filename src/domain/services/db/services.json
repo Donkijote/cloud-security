@@ -96,20 +96,20 @@
   },
   {
     "id": "intercoms",
-    "imgUrl": "https://www.lanotamusical.com/wp-content/uploads/2023/06/timbre-intercomunicador-sencillo-2.jpg",
+    "imgUrl": "/images/intercoms/intercoms-thumbnail.png",
     "title": "Citofonía",
     "description": "Instalación y mantenimiento de equipos de citofonía.",
-    "heroUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/principal-citofonia.jpg",
+    "heroUrl": "/images/intercoms/hero.png",
     "sections": [
       {
         "title": "Citofonía Digital de Alta Confiabilidad",
         "description": "En Cloud-Security brindamos soluciones avanzadas de citofonía y control de acceso, diseñadas para optimizar la comunicación y reforzar la seguridad en entornos residenciales, corporativos y comunitarios.",
-        "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/producto-1-citofonia.jpg"
+        "imgUrl": "/images/intercoms/intercoms-1.png"
       },
       {
         "title": "",
         "description": "Ofrecemos sistemas Standalone y plataformas inteligentes que incorporan tecnología de Inteligencia Artificial para la identificación precisa de personas, permitiendo una gestión de accesos más eficiente, segura y automatizada",
-        "imgUrl": "https://cloud-security.cl/wp-content/uploads/2025/07/producto-2-citofonia.jpg"
+        "imgUrl": "/images/intercoms/intercoms-2.png"
       }
     ]
   },
