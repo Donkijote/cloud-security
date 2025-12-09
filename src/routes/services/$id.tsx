@@ -19,7 +19,7 @@ function ServicePage() {
   return (
     <div className="-mt-20 bg-(--color-bg)">
       <Hero imageSrc={service.heroUrl} imageAlt={service.title} />
-      <div className="relative z-10 pt-[420px] lg:pt-[520px] xl:pt-[600px]">
+      <div className="relative z-10 pt-[70vh] xl:pt-[90vh]">
         <div className="grid gap-16 grid-cols-1">
           <section
             id={"title"}

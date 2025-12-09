@@ -18,7 +18,7 @@ export const Hero = ({ imageSrc, imageAlt = "", children }: HeroProps) => {
       <img
         src={imageSrc}
         alt={imageAlt}
-        className=" w-full object-cover h-[420px] lg:h-[520px] xl:h-[600px]"
+        className="w-full object-cover h-[70vh] xl:h-[90vh]"
       />
 
       {children && (
