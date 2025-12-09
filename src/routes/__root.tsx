@@ -49,7 +49,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
         <Layout>{children}</Layout>
         <TanStackDevtools
           config={{
-            position: "bottom-right",
+            position: "bottom-left",
           }}
           plugins={[
             {
