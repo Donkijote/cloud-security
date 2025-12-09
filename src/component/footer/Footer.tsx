@@ -6,9 +6,9 @@ const year = new Date().getFullYear();
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-[var(--color-border-subtle)] bg-[var(--color-surface)] text-[var(--color-text-muted)]">
+    <footer className="border-t border-(--color-border-subtle) bg-(--color-surface) text-(--color-text-muted)">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-4">
           <div className="space-y-6 flex flex-col items-center">
             <Link to="/" className="inline-flex items-center justify-center">
               <img
@@ -28,21 +28,21 @@ export const Footer = () => {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold tracking-wide text-[var(--color-text)]">
+            <h3 className="text-sm font-semibold tracking-wide text-(--color-text)">
               Nosotros
             </h3>
             <nav className="space-y-2 text-sm">
               <Link
                 to="/"
                 hash={"home"}
-                className="block hover:text-[var(--color-primary)] transition-colors"
+                className="block hover:text-(--color-primary) transition-colors"
               >
                 Inicio
               </Link>
               <Link
                 to="/"
                 hash={"about"}
-                className="block hover:text-[var(--color-primary)] transition-colors"
+                className="block hover:text-(--color-primary) transition-colors"
               >
                 Sobre nosotros
               </Link>
@@ -50,14 +50,14 @@ export const Footer = () => {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold tracking-wide text-[var(--color-text)]">
+            <h3 className="text-sm font-semibold tracking-wide text-(--color-text)">
               Servicios
             </h3>
             <nav className="space-y-2 text-sm">
               <Link
                 to={"/"}
                 hash={"services"}
-                className="block hover:text-[var(--color-primary)] transition-colors"
+                className="block hover:text-(--color-primary) transition-colors"
               >
                 Nuestros servicios
               </Link>
@@ -65,14 +65,14 @@ export const Footer = () => {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold tracking-wide text-[var(--color-text)]">
+            <h3 className="text-sm font-semibold tracking-wide text-(--color-text)">
               Contacto
             </h3>
             <nav className="space-y-2 text-sm">
               <Link
                 to="/"
                 hash={"contact"}
-                className="block hover:text-[var(--color-primary)] transition-colors"
+                className="block hover:text-(--color-primary) transition-colors"
               >
                 Conocer más
               </Link>
@@ -80,33 +80,33 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-[var(--color-border-subtle)] pt-6">
+        <div className="mt-10 border-t border-(--color-border-subtle) pt-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-xs sm:text-sm">
             <div className="flex flex-wrap gap-4">
               <Link
                 to={"/"}
-                className="hover:text-[var(--color-primary)] transition-colors"
+                className="hover:text-(--color-primary) transition-colors"
               >
                 Políticas de privacidad
               </Link>
               <Link
                 to={"/"}
-                className="hover:text-[var(--color-primary)] transition-colors"
+                className="hover:text-(--color-primary) transition-colors"
               >
                 Términos y servicios
               </Link>
             </div>
 
-            <div className="text-[var(--color-text-muted)]">
+            <div className="text-(--color-text-muted)">
               © {year} Cloud Security. Todos los derechos reservados.
             </div>
 
-            <div className="text-[var(--color-text-muted)] text-center md:text-right">
+            <div className="text-(--color-text-muted) text-center md:text-right">
               Desarrollado por{" "}
               <a
                 href="https://www.linkedin.com/in/manuel-jos%C3%A9-gon%C3%A7alves-castellano-6b7151150/"
                 target={"_blank"}
-                className="hover:text-[var(--color-primary)] font-medium transition-colors"
+                className="hover:text-(--color-primary) font-medium transition-colors"
                 rel="noopener"
               >
                 Donkijote
