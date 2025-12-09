@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+import { clsx } from "clsx";
 import { Moon, Sun } from "lucide-react";
 
 type Theme = "light" | "dark";
@@ -36,9 +37,11 @@ export const ThemeToggle = () => {
     <button
       type="button"
       onClick={toggleTheme}
-      className={
-        "cursor-pointer inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-700 shadow-sm hover:bg-slate-100 hover:border-slate-400 transition dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700"
-      }
+      className={clsx(
+        "cursor-pointer inline-flex h-10 w-10 items-center justify-center rounded-full border text-sm",
+        "border-slate-200/60 bg-(--color-surface) shadow-sm backdrop-blur",
+        "hover:bg-white/90 dark:border-slate-700 dark:bg-slate-800/90 dark:hover:bg-slate-700",
+      )}
       aria-label={
         theme === "light" ? "Switch to dark mode" : "Switch to light mode"
       }
