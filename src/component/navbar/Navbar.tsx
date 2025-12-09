@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import { clsx } from "clsx";
 
 import { Link } from "@tanstack/react-router";
@@ -14,28 +12,12 @@ const NAV_LINKS = [
 ];
 
 export const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handler = () => {
-      setScrolled(window.scrollY > 60);
-    };
-    window.addEventListener("scroll", handler);
-    return () => window.removeEventListener("scroll", handler);
-  }, []);
-
   return (
     <nav
       className={clsx(
-        "sticky top-0 z-50 px-4 sm:px-6 lg:px-8 xl:px-12 min-h-[80px] flex items-center transition-all duration-100",
-        "text-slate-100",
-        "border-b backdrop-blur-md transition-[background-color,border-color,box-shadow] duration-100",
-        {
-          "bg-transparent dard:bg-[var(--color-surface)] dark:bg-slate-900/40 border-transparent shadow-none":
-            !scrolled,
-          "bg-white/70 dark:bg-slate-900/70 border-slate-200/60 dark:border-slate-800/60 shadow-md text-slate-900 dark:text-slate-100":
-            scrolled,
-        },
+        "sticky top-0 z-50 px-4 sm:px-6 lg:px-8 xl:px-12 min-h-20 flex items-center transition-all duration-100",
+        "border-b backdrop-blur-sm transition-[background-color,border-color,box-shadow] duration-100",
+        "bg-white/10 dark:bg-slate-900/70 border-slate-100/10 dark:border-slate-800/50 shadow-md  dark:text-slate-100",
       )}
     >
       <div className="flex w-full items-center">
@@ -48,9 +30,6 @@ export const Navbar = () => {
               className={clsx(
                 "transition-all duration-100",
                 "dark:invert-[1] dark:brightness-0 dark:navbar-invert-[0] dark:navbar-brightness-100",
-                {
-                  "brightness-0 invert-[1]": !scrolled,
-                },
               )}
             />
           </Link>
