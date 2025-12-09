@@ -1,5 +1,7 @@
 import { Mail, MapPin } from "lucide-react";
 
+import { ContactForm } from "@/component/form/ContactForm";
+
 export const Contact = () => {
   return (
     <section
@@ -63,92 +65,7 @@ export const Contact = () => {
                   Envíanos un mensaje
                 </h3>
 
-                <form method="POST">
-                  <div className="mb-5">
-                    <label
-                      htmlFor="name"
-                      className="block text-xs font-medium uppercase tracking-wide text-(--color-text-muted)"
-                    >
-                      Nombre*
-                    </label>
-                    <input
-                      id={"name"}
-                      type="text"
-                      name="name"
-                      placeholder="Tu nombre"
-                      required
-                      className="mt-1 w-full border-0 border-b border-slate-200 bg-transparent py-3 text-sm text-(--color-text) placeholder:text-slate-400 focus:border-(--color-primary) focus:outline-none focus:ring-0 dark:border-slate-700 dark:placeholder:text-slate-500"
-                    />
-                  </div>
-
-                  <div className="mb-5">
-                    <label
-                      htmlFor="email"
-                      className="block text-xs font-medium uppercase tracking-wide text-(--color-text-muted)"
-                    >
-                      Email*
-                    </label>
-                    <input
-                      id={"email"}
-                      type="email"
-                      name="email"
-                      placeholder="usuario@dominio.com"
-                      required
-                      className="mt-1 w-full border-0 border-b border-slate-200 bg-transparent py-3 text-sm text-(--color-text) placeholder:text-slate-400 focus:border-(--color-primary) focus:outline-none focus:ring-0 dark:border-slate-700 dark:placeholder:text-slate-500"
-                    />
-                  </div>
-
-                  <div className="mb-5">
-                    <label
-                      htmlFor="phone"
-                      className="block text-xs font-medium uppercase tracking-wide text-(--color-text-muted)"
-                    >
-                      Teléfono*
-                    </label>
-                    <input
-                      id={"phone"}
-                      type="tel"
-                      name="phone"
-                      placeholder="+56 9 456 78910"
-                      required
-                      className="mt-1 w-full border-0 border-b border-slate-200 bg-transparent py-3 text-sm text-(--color-text) placeholder:text-slate-400 focus:border-(--color-primary) focus:outline-none focus:ring-0 dark:border-slate-700 dark:placeholder:text-slate-500"
-                    />
-                  </div>
-
-                  <div className="mb-6">
-                    <label
-                      htmlFor="message"
-                      className="block text-xs font-medium uppercase tracking-wide text-(--color-text-muted)"
-                    >
-                      Mensaje*
-                    </label>
-                    <textarea
-                      id={"message"}
-                      name="message"
-                      rows={3}
-                      placeholder="Escribe tu mensaje"
-                      required
-                      className="mt-1 w-full resize-none border-0 border-b border-slate-200 bg-transparent py-3 text-sm text-(--color-text) placeholder:text-slate-400 focus:border-(--color-primary) focus:outline-none focus:ring-0 dark:border-slate-700 dark:placeholder:text-slate-500"
-                    />
-                    <input
-                      type="hidden"
-                      name="_next"
-                      value="https://cloudarmy.cl/contact-ok.html"
-                    />
-                    <input
-                      type="hidden"
-                      name="_subject"
-                      value="Nuevo mensaje"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="inline-flex w-full items-center justify-center rounded-full bg-(--color-primary) px-6 py-3 text-sm font-medium text-white shadow-lg shadow-black/10 transition-transform hover:-translate-y-0.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-primary) focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-900"
-                  >
-                    Enviar mensaje
-                  </button>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>
