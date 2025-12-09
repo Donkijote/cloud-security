@@ -17,16 +17,16 @@ function ServicePage() {
   const service = Route.useLoaderData();
 
   return (
-    <div className="-mt-20 bg-[var(--color-bg)]">
+    <div className="-mt-20 bg-(--color-bg)">
       <Hero imageSrc={service.heroUrl} imageAlt={service.title} />
       <div className="relative z-10 pt-[420px] lg:pt-[520px] xl:pt-[600px]">
         <div className="grid gap-16 grid-cols-1">
           <section
             id={"title"}
-            className="w-full px-4 py-12 sm:py-16 lg:py-18 text-[var(--color-text)]"
+            className="w-full px-4 py-12 sm:py-16 lg:py-18 text-(--color-text)"
           >
             <div className="mx-auto max-w-5xl text-center space-y-6">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--color-text)]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-(--color-text)">
                 {service.title}
               </h2>
             </div>
@@ -35,13 +35,13 @@ function ServicePage() {
         {service.sections.map((section, index) => (
           <section
             key={section.title}
-            className="py-20 md:py-28 text-[var(--color-text)]"
+            className="py-20 md:py-28 text-(--color-text)"
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid items-center gap-12 md:grid-cols-2">
                 <div
                   className={clsx(
-                    "relative h-72 sm:h-80 md:h-full rounded-3xl overflow-hidden shadow-lg bg-[var(--color-surface)]",
+                    "relative h-72 sm:h-80 md:h-full rounded-3xl overflow-hidden shadow-lg bg-(--color-surface)",
                     {
                       "order-1": index % 2 === 0,
                       "order-2": index % 2 !== 0,
@@ -53,7 +53,7 @@ function ServicePage() {
                     alt={section.title}
                     className="h-full w-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-[var(--color-primary)]/10" />
+                  <div className="absolute inset-0 bg-(--color-primary)/10" />
                 </div>
 
                 <div
@@ -66,7 +66,7 @@ function ServicePage() {
                     {section.title}
                   </h2>
 
-                  <p className="mt-4 text-[var(--color-text-muted)] leading-relaxed text-center">
+                  <p className="mt-4 text-(--color-text-muted) leading-relaxed text-center">
                     {section.description}
                   </p>
                 </div>

@@ -51,18 +51,18 @@ function App() {
         <div className="grid gap-16 grid-cols-1">
           <section
             id={"home"}
-            className="w-full px-4 py-12 sm:py-16 lg:py-20 text-[var(--color-text)]"
+            className="w-full px-4 py-12 sm:py-16 lg:py-20 text-(--color-text)"
           >
             <div className="mx-auto max-w-5xl text-center space-y-6">
-              <div className="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium uppercase tracking-wide bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text-muted)]">
+              <div className="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium uppercase tracking-wide bg-(--color-surface) border border-(--color-border) text-(--color-text-muted)">
                 Reliable protection for real-world spaces
               </div>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--color-text)]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-(--color-text)">
                 Smart security systems for homes and businesses
               </h2>
 
-              <p className="mx-auto max-w-3xl text-sm sm:text-base leading-relaxed text-[var(--color-text-muted)]">
+              <p className="mx-auto max-w-3xl text-sm sm:text-base leading-relaxed text-(--color-text-muted)">
                 We design, install and maintain complete security solutions:
                 CCTV cameras, alarm systems, fire detection, access control and
                 structured electrical circuits. Our goal is simple — keep your
@@ -73,23 +73,20 @@ function App() {
           </section>
 
           <Services />
-          <section
-            id={"about"}
-            className="py-20 md:py-28 text-[var(--color-text)]"
-          >
+          <section id={"about"} className="py-20 md:py-28 text-(--color-text)">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid items-start gap-12 md:grid-cols-2">
-                <div className="relative h-72 sm:h-80 md:h-full rounded-3xl overflow-hidden shadow-lg bg-[var(--color-surface)]">
+                <div className="relative h-72 sm:h-80 md:h-full rounded-3xl overflow-hidden shadow-lg bg-(--color-surface)">
                   <img
                     src="/images/about.png"
                     alt="Equipo de seguridad trabajando en terreno"
                     className="h-full w-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-[var(--color-primary)]/20" />
+                  <div className="absolute inset-0 bg-(--color-primary)/20" />
                 </div>
 
                 <div className="flex flex-col justify-start">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-primary)] dark:text-[var(--color-text-muted)] mb-3 text-center">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-(--color-primary) dark:text-(--color-text-muted) mb-3 text-center">
                     ¿Quiénes somos?
                   </p>
 
@@ -97,22 +94,22 @@ function App() {
                     Más de 25 años de experiencia en seguridad integral
                   </h2>
 
-                  <p className="mt-2 text-[var(--color-text-muted)] leading-relaxed text-left">
+                  <p className="mt-2 text-(--color-text-muted) leading-relaxed text-left">
                     En{" "}
-                    <span className="font-semibold text-[var(--color-text)]">
+                    <span className="font-semibold text-(--color-text)">
                       Cloud Security
                     </span>{" "}
                     cuidamos lo que más te importa.
                   </p>
 
-                  <p className="mt-4 text-[var(--color-text-muted)] leading-relaxed text-left">
+                  <p className="mt-4 text-(--color-text-muted) leading-relaxed text-left">
                     Somos especialistas en seguridad electrónica y ofrecemos
                     soluciones integrales: diseño de proyectos, instalaciones en
                     las distintas líneas de seguridad, implementación a la
                     medida y soporte continuo.
                   </p>
 
-                  <p className="mt-4 text-[var(--color-text-muted)] leading-relaxed text-left">
+                  <p className="mt-4 text-(--color-text-muted) leading-relaxed text-left">
                     Con tecnología certificada, equipos profesionales y un trato
                     personalizado, tu seguridad está en las mejores manos.
                   </p>
