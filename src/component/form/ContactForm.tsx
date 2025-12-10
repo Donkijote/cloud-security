@@ -4,6 +4,8 @@ import { LoaderCircle } from "lucide-react";
 
 import { type AnyFieldApi, useForm } from "@tanstack/react-form";
 
+import { sendContactEmail } from "@/api/send-contact-email";
+
 const requiredValidator = {
   onChange: ({ value }: { value: string }) => {
     if (!value.length) return "Campo requerido";
@@ -19,8 +21,7 @@ export const ContactForm = () => {
       message: "",
     },
     onSubmit: async ({ value }) => {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-      console.log(value);
+      await sendContactEmail({ data: value });
     },
   });
 
