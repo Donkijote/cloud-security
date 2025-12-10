@@ -1,4 +1,6 @@
-import type { FormEvent } from "react";
+import { Activity, type FormEvent } from "react";
+
+import { LoaderCircle } from "lucide-react";
 
 import { type AnyFieldApi, useForm } from "@tanstack/react-form";
 
@@ -17,6 +19,7 @@ export const ContactForm = () => {
       message: "",
     },
     onSubmit: async ({ value }) => {
+      await new Promise((resolve) => setTimeout(resolve, 2000));
       console.log(value);
     },
   });
@@ -134,10 +137,16 @@ export const ContactForm = () => {
           <button
             type="submit"
             className={
-              "cursor-pointer inline-flex w-full items-center justify-center rounded-full bg-(--color-primary) px-6 py-3 text-sm font-medium text-white shadow-lg shadow-black/10 transition-transform hover:-translate-y-0.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-primary) focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-900"
+              "cursor-pointer inline-flex w-full items-center justify-center gap-2 rounded-full bg-(--color-primary) px-6 py-3 text-sm font-medium text-white shadow-lg shadow-black/10 transition-transform hover:-translate-y-0.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-primary) focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-900"
             }
           >
-            {isSubmitting ? "Enviando..." : "Enviar mensaje"}
+            <span>{isSubmitting ? "Enviando" : "Enviar mensaje"}</span>
+            <Activity
+              name={"form-button"}
+              mode={isSubmitting ? "visible" : "hidden"}
+            >
+              <LoaderCircle className={"h-4 w-4 animate-spin text-white"} />
+            </Activity>
           </button>
         )}
       </form.Subscribe>
