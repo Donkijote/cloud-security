@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@dxkit-org/react-floating-whatsapp':
+        specifier: ^1.0.9
+        version: 1.0.9(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@tailwindcss/vite':
         specifier: ^4.0.6
         version: 4.1.17(vite@7.2.4(@types/node@22.19.1)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6))
@@ -344,6 +347,13 @@ packages:
   '@csstools/css-tokenizer@3.0.4':
     resolution: {integrity: sha512-Vd/9EVDiu6PPJt9yAh6roZP6El1xHrdvIVGjyBsHR0RYwNHgL7FJPyIIW4fANJNG6FtyZfvlRPpFI4ZM/lubvw==}
     engines: {node: '>=18'}
+
+  '@dxkit-org/react-floating-whatsapp@1.0.9':
+    resolution: {integrity: sha512-ZYBEo4qVXTGcsfIyQezyojBJogM8wgf5mhOMLoJ4hCgs1JnY4CXUvpJNNBZT/nLpekK7V54kaVpagLu7Ox1i+w==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
 
   '@emnapi/core@1.7.1':
     resolution: {integrity: sha512-o1uhUASyo921r2XtHYOHy7gdkGLge8ghBEQHMWmyJFoXlpU58kIrhhN3w26lpQb6dspetweapMn2CSNwQ8I4wg==}
@@ -2584,6 +2594,11 @@ snapshots:
   '@csstools/css-syntax-patches-for-csstree@1.0.20': {}
 
   '@csstools/css-tokenizer@3.0.4': {}
+
+  '@dxkit-org/react-floating-whatsapp@1.0.9(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@emnapi/core@1.7.1':
     dependencies:

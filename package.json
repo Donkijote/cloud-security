@@ -12,6 +12,7 @@
     "check": "biome check"
   },
   "dependencies": {
+    "@dxkit-org/react-floating-whatsapp": "^1.0.9",
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/react-devtools": "^0.7.0",
     "@tanstack/react-form": "^1.27.1",
