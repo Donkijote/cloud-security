@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { clsx } from "clsx";
 import { Moon, Sun } from "lucide-react";
 
+import { LocalStorageKeys, setItem } from "@/application/storage/LocalStorage";
+
 type Theme = "light" | "dark";
 
 export const ThemeToggle = () => {
@@ -11,6 +13,7 @@ export const ThemeToggle = () => {
   useEffect(() => {
     const initial = detectInitialTheme();
     setTheme(initial);
+    setItem(LocalStorageKeys.THEME, initial);
   }, []);
 
   useEffect(() => {
@@ -25,12 +28,16 @@ export const ThemeToggle = () => {
     }
 
     if (typeof window !== "undefined") {
-      localStorage.setItem("theme", theme);
+      setItem(LocalStorageKeys.THEME, theme);
     }
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    setTheme((prev) => {
+      const newTheme = prev === "light" ? "dark" : "light";
+      setItem(LocalStorageKeys.THEME, newTheme);
+      return newTheme;
+    });
   };
 
   return (

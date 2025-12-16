@@ -9,14 +9,16 @@ export const WhatsAppButton = () => {
   const goBackButton =
     useLocalStorage(LocalStorageKeys.GO_BACK_BUTTON) === "true";
 
+  const darkMode = useLocalStorage(LocalStorageKeys.THEME) === "dark";
+
   return (
     <FloatingWhatsApp
       phoneNumber="1234567890"
       accountName="Cloud Security"
       avatar="/favicon.svg"
       statusMessage="Usualmente responde en minutos"
-      chatMessage="¡Hola! 👋¿Cómo puedo ayudarte hoy?"
-      darkMode={true}
+      chatMessage="¡Hola! 👋 ¿Cómo puedo ayudarte hoy?"
+      darkMode={darkMode}
       allowClickAway={false}
       allowEsc={true}
       notification={false}
