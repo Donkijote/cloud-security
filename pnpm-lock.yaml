@@ -11,9 +11,9 @@ importers:
       '@dxkit-org/react-floating-whatsapp':
         specifier: ^1.0.9
         version: 1.0.9(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@emailjs/browser':
-        specifier: ^4.4.1
-        version: 4.4.1
+      '@emailjs/nodejs':
+        specifier: ^5.0.2
+        version: 5.0.2
       '@tailwindcss/vite':
         specifier: ^4.0.6
         version: 4.1.17(vite@7.2.4(@types/node@22.19.1)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6))
@@ -358,9 +358,9 @@ packages:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
 
-  '@emailjs/browser@4.4.1':
-    resolution: {integrity: sha512-DGSlP9sPvyFba3to2A50kDtZ+pXVp/0rhmqs2LmbMS3I5J8FSOgLwzY2Xb4qfKlOVHh29EAutLYwe5yuEZmEFg==}
-    engines: {node: '>=14.0.0'}
+  '@emailjs/nodejs@5.0.2':
+    resolution: {integrity: sha512-+BrO5rF0msaoEeSKxoa64weUkczd3fTXRCB8/EnKaIRzC8B1EyLDZfr9vYK5TNG/U3Eco9cpjMNnA1IlUBkmOw==}
+    engines: {node: '>=18.0.0'}
 
   '@emnapi/core@1.7.1':
     resolution: {integrity: sha512-o1uhUASyo921r2XtHYOHy7gdkGLge8ghBEQHMWmyJFoXlpU58kIrhhN3w26lpQb6dspetweapMn2CSNwQ8I4wg==}
@@ -2607,7 +2607,7 @@ snapshots:
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
 
-  '@emailjs/browser@4.4.1': {}
+  '@emailjs/nodejs@5.0.2': {}
 
   '@emnapi/core@1.7.1':
     dependencies:

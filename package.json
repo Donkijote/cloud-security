@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@dxkit-org/react-floating-whatsapp": "^1.0.9",
-    "@emailjs/browser": "^4.4.1",
+    "@emailjs/nodejs": "^5.0.2",
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/react-devtools": "^0.7.0",
     "@tanstack/react-form": "^1.27.1",
