@@ -1,20 +1,18 @@
 import { createServerFn } from "@tanstack/react-start";
 
-type ContactData = {
-  name: string;
-  email: string;
-  phone: string;
-  message: string;
-};
+import type { Email } from "@/domain/services/entity/EmailEntity";
+import { EmailRepository } from "@/domain/services/repository/EmailRepository";
 
 export const sendContactEmail = createServerFn({
   method: "POST",
 })
-  .inputValidator((data: ContactData) => data)
+  .inputValidator((data: Email) => data)
   .handler(async ({ data }) => {
-    console.log("Sending contact email with the following data:", data);
-
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    return { success: true, message: "Contact email sent successfully." };
+    try {
+      await EmailRepository.sendEmail(data);
+      return { status: "success" };
+    } catch (error) {
+      console.error("Error sending email:", error);
+      return { status: "error" };
+    }
   });
