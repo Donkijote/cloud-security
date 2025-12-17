@@ -1,5 +1,6 @@
-import { Activity, type FormEvent } from "react";
+import { Activity, type FormEvent, useState } from "react";
 
+import { clsx } from "clsx";
 import { LoaderCircle } from "lucide-react";
 
 import { type AnyFieldApi, useForm } from "@tanstack/react-form";
@@ -13,6 +14,10 @@ const requiredValidator = {
 };
 
 export const ContactForm = () => {
+  const [contactFormState, setContactFormState] = useState<
+    "success" | "error" | null
+  >(null);
+
   const form = useForm({
     defaultValues: {
       name: "",
@@ -20,8 +25,13 @@ export const ContactForm = () => {
       phone: "",
       message: "",
     },
-    onSubmit: async ({ value }) => {
-      await sendContactEmail({ data: value });
+    onSubmit: async ({ value, formApi }) => {
+      const resp = await sendContactEmail({ data: value });
+      setContactFormState(resp.status);
+      if (resp.status === "success") {
+        formApi.reset();
+        setTimeout(() => setContactFormState(null), 1500);
+      }
     },
   });
 
@@ -151,6 +161,22 @@ export const ContactForm = () => {
           </button>
         )}
       </form.Subscribe>
+
+      <div className={"absolute -bottom-8 w-full"}>
+        <div className={"flex justify-center text-sm"}>
+          <p
+            className={clsx("transition-all delay-300 opacity-0", {
+              "text-green-500": contactFormState === "success",
+              "text-red-500": contactFormState === "error",
+              "opacity-100": contactFormState !== null,
+            })}
+          >
+            {contactFormState === "success"
+              ? "¡Mensaje enviado con éxito!"
+              : "Error al enviar el mensaje."}
+          </p>
+        </div>
+      </div>
     </form>
   );
 };
