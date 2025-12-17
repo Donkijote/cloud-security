@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 
+import { I18nextProvider } from "react-i18next";
+
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
@@ -7,6 +9,7 @@ import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { Layout } from "@/layout/Layout";
 
 import appCss from "../styles.css?url";
+import i18n from "./i18n";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -46,7 +49,9 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
         <HeadContent />
       </head>
       <body>
-        <Layout>{children}</Layout>
+        <I18nextProvider i18n={i18n}>
+          <Layout>{children}</Layout>
+        </I18nextProvider>
         <TanStackDevtools
           config={{
             position: "bottom-left",
