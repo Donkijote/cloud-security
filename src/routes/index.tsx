@@ -1,3 +1,5 @@
+import { Trans } from "react-i18next";
+
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { getServices } from "@/api/get-services";
@@ -16,20 +18,22 @@ function App() {
       <Hero imageSrc={"/images/hero.png"} imageAlt="Cloud security hero image">
         <div className="max-w-2xl w-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl rounded-2xl px-3 py-4 sm:px-6 sm:py-6 md:px-8 md:py-8 text-center flex flex-col items-center gap-4 sm:gap-5">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white drop-shadow-lg leading-tight">
-            Protege lo que más Importa
+            <Trans i18nKey={"home.hero.title"} />
           </h1>
 
           <p className="text-xs sm:text-sm md:text-base text-slate-200/90 leading-relaxed max-w-md">
-            Ofrecemos servicios especializados en{" "}
-            <span className="font-semibold">
-              CCTV • Alarmas de incendios • Alarmas de monitoreo • Cercado
-              Eléctrico • Control de Acceso
-            </span>
-            <span className="hidden lg:inline">
-              {" "}
-              complementos esenciales para crear soluciones eficaces de
-              seguridad.
-            </span>
+            <Trans
+              i18nKey={"home.hero.description"}
+              components={{
+                bold: <span className={"font-semibold"} />,
+              }}
+            />
+            <Trans
+              i18nKey={"home.hero.secondaryDescription"}
+              components={{
+                span: <span className={"hidden lg:inline"} />,
+              }}
+            />
           </p>
 
           <Link
@@ -37,7 +41,7 @@ function App() {
             hash={"contact"}
             className="cursor-pointer inline-flex items-center justify-center px-5 py-2 rounded-xl bg-white/15 hover:bg-white/20 border border-white/30 text-white font-medium backdrop-blur transition text-xs sm:text-sm md:text-base"
           >
-            Get started
+            <Trans i18nKey={"home.hero.button"} />
           </Link>
 
           <img
@@ -55,19 +59,15 @@ function App() {
           >
             <div className="mx-auto max-w-5xl text-center space-y-6">
               <div className="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium uppercase tracking-wide bg-(--color-surface) border border-(--color-border) text-(--color-text-muted)">
-                Reliable protection for real-world spaces
+                <Trans i18nKey={"home.introduction.label"} />
               </div>
 
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-(--color-text)">
-                Smart security systems for homes and businesses
+                <Trans i18nKey={"home.introduction.title"} />
               </h2>
 
               <p className="mx-auto max-w-3xl text-sm sm:text-base leading-relaxed text-(--color-text-muted)">
-                We design, install and maintain complete security solutions:
-                CCTV cameras, alarm systems, fire detection, access control and
-                structured electrical circuits. Our goal is simple — keep your
-                people, property and infrastructure protected 24/7 with systems
-                that are reliable, easy to use and tailored to your space.
+                <Trans i18nKey={"home.introduction.description"} />
               </p>
             </div>
           </section>

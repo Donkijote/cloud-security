@@ -1,3 +1,19 @@
 {
-  "hello": "hola"
+  "home": {
+    "hero": {
+      "title": "Protege lo que más Importa",
+      "description": "Ofrecemos servicios especializados en <bold>\nCCTV • Alarmas de incendios • Alarmas de monitoreo • Cercado Eléctrico • Control de Acceso\n</bold>",
+      "secondaryDescription": "<span>\ncomplementos esenciales para crear soluciones eficaces de seguridad.</span>",
+      "button": "Contáctanos"
+    },
+    "introduction": {
+      "label": "Protección confiable para espacios del mundo real",
+      "title": "Sistemas de seguridad inteligentes para hogares y empresas",
+      "description": "Diseñamos, instalamos y mantenemos soluciones integrales de seguridad: cámaras de CCTV, sistemas de alarma, detección de incendios, control de acceso y circuitos eléctricos estructurados. Nuestro objetivo es simple: mantener a su personal, propiedad e infraestructura protegidos las 24 horas, los 7 días de la semana, con sistemas confiables, fáciles de usar y adaptados a su espacio."
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Ofrecemos soluciones integrales de seguridad orientadas a proteger\ntus espacios mediante la instalación de sistemas avanzados de\nvideovigilancia, alarmas contra incendios, cercos eléctricos y\ncontrol de accesos. Incorporamos tecnologías de última generación\nque garantizan una protección continua, confiable y adaptada a las\nnecesidades de tu hogar o negocio."
+    }
+  }
 }

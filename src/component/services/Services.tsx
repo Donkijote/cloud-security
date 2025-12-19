@@ -1,22 +1,19 @@
+import { Trans } from "react-i18next";
+
 import { getRouteApi, Link } from "@tanstack/react-router";
 
 export const Services = () => {
   const services = getRouteApi("/").useLoaderData();
 
   return (
-    <section id={"services"} className="py-16 md:py-24 bg-[var(--color-bg)]">
+    <section id={"services"} className="py-16 md:py-24 bg-(--color-bg)">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-10 md:mb-14 max-w-2xl">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[var(--color-text)]">
-            Nuestros Servicios
+          <h2 className="text-3xl md:text-4xl font-semibold text-(--color-text)">
+            <Trans i18nKey={"home.services.title"} />
           </h2>
-          <p className="mt-4 text-base text-[var(--color-text-muted)]">
-            Ofrecemos soluciones integrales de seguridad orientadas a proteger
-            tus espacios mediante la instalación de sistemas avanzados de
-            videovigilancia, alarmas contra incendios, cercos eléctricos y
-            control de accesos. Incorporamos tecnologías de última generación
-            que garantizan una protección continua, confiable y adaptada a las
-            necesidades de tu hogar o negocio.
+          <p className="mt-4 text-base text-(--color-text-muted)">
+            <Trans i18nKey={"home.services.description"} />
           </p>
         </div>
 
@@ -33,7 +30,7 @@ export const Services = () => {
                 alt={id}
                 className="absolute inset-0 h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/35 backdrop-blur-[4px] flex flex-col justify-end p-5 sm:p-6">
+              <div className="absolute inset-0 bg-black/35 backdrop-blur-xs flex flex-col justify-end p-5 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-semibold text-white">
                   {title}
                 </h3>

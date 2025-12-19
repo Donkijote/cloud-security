@@ -1,3 +1,19 @@
 {
-  "hello": "hello"
+  "home": {
+    "hero": {
+      "title": "Protect what matters the most",
+      "description": "We offer specialised services in <bold>\nCCTV • Fire Alarms • Intruders Alarms • Electric Fence • Control Access\n</bold>",
+      "secondaryDescription": "<span>\nesencial complements to create efficient security solutions.</span>",
+      "button": "Get started"
+    },
+    "introduction": {
+      "label": "Reliable protection for real-world spaces",
+      "title": "Smart security systems for homes and businesses",
+      "description": "We design, install and maintain complete security solutions:\nCCTV cameras, alarm systems, fire detection, access control and\nstructured electrical circuits. Our goal is simple — keep your\npeople, property and infrastructure protected 24/7 with systems\nthat are reliable, easy to use and tailored to your space."
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "We offer comprehensive security solutions designed to protect your spaces.\n\nWe install advanced systems including video surveillance, fire alarms, electric fences, and access control.\n\nWe incorporate cutting-edge technologies that guarantee continuous, reliable protection tailored to the needs of your home or business."
+    }
+  }
 }
