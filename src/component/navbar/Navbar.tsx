@@ -2,7 +2,7 @@ import { Activity, useState } from "react";
 
 import { clsx } from "clsx";
 import { Menu, X } from "lucide-react";
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import { Link } from "@tanstack/react-router";
 
@@ -17,6 +17,7 @@ const NAV_LINKS = [
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -61,7 +62,7 @@ export const Navbar = () => {
                         "text-blue-600 dark:text-blue-400 font-semibold",
                     }}
                   >
-                    <Trans i18nKey={`navbar.${link.hash}`} />
+                    <Trans t={t} i18nKey={`navbar.${link.hash}`} />
                   </Link>
                 </li>
               ))}
@@ -145,7 +146,7 @@ export const Navbar = () => {
                   }}
                   onClick={() => setIsOpen(false)}
                 >
-                  <Trans i18nKey={`navbar.${link.hash}`} />
+                  <Trans t={t} i18nKey={`navbar.${link.hash}`} />
                 </Link>
               </li>
             ))}

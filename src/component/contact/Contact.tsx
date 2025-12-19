@@ -1,9 +1,11 @@
 import { Mail, MapPin } from "lucide-react";
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import { ContactForm } from "@/component/form/ContactForm";
 
 export const Contact = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "home.contact" });
+
   return (
     <section
       id={"contact"}
@@ -14,13 +16,13 @@ export const Contact = () => {
           <div className="space-y-10">
             <div className="space-y-3 max-w-xl">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-(--color-primary) dark:text-(--color-text-muted)">
-                <Trans i18nKey={"home.contact.label"} />
+                <Trans t={t} i18nKey={"label"} />
               </p>
               <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                <Trans i18nKey={"home.contact.title"} />
+                <Trans t={t} i18nKey={"title"} />
               </h2>
               <p className="text-lg font-medium text-(--color-text-muted)">
-                <Trans i18nKey={"home.contact.subtitle"} />
+                <Trans t={t} i18nKey={"subtitle"} />
               </p>
             </div>
 
@@ -31,10 +33,10 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-base font-semibold mb-2">
-                    <Trans i18nKey={"home.contact.location.title"} />
+                    <Trans t={t} i18nKey={"location.title"} />
                   </h3>
                   <p className="text-sm text-(--color-text-muted)">
-                    <Trans i18nKey={"home.contact.location.description"} />
+                    <Trans t={t} i18nKey={"location.description"} />
                   </p>
                 </div>
               </div>
@@ -45,10 +47,10 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-base font-semibold mb-2">
-                    <Trans i18nKey={"home.contact.contact.title"} />
+                    <Trans t={t} i18nKey={"contact.title"} />
                   </h3>
                   <p className="text-sm text-(--color-text-muted) mb-1">
-                    <Trans i18nKey={"home.contact.contact.description"} />
+                    <Trans t={t} i18nKey={"contact.description"} />
                   </p>
                   <a
                     href="mailto:contacto@cloud-security.cl"
@@ -66,7 +68,7 @@ export const Contact = () => {
               <div className="pointer-events-none absolute -inset-px rounded-2xl bg-linear-to-br from-(--color-primary)/10 via-transparent to-(--color-primary)/10 opacity-70" />
               <div className="relative">
                 <h3 className="mb-6 text-2xl font-semibold md:text-[26px]">
-                  <Trans i18nKey={"home.contact.form.title"} />
+                  <Trans t={t} i18nKey={"form.title"} />
                 </h3>
 
                 <ContactForm />

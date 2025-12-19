@@ -1,4 +1,4 @@
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import { createFileRoute, Link } from "@tanstack/react-router";
 
@@ -13,22 +13,26 @@ export const Route = createFileRoute("/")({
 });
 
 function App() {
+  const { t } = useTranslation();
+
   return (
     <div className="-mt-20">
       <Hero imageSrc={"/images/hero.png"} imageAlt="Cloud security hero image">
         <div className="max-w-2xl w-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl rounded-2xl px-3 py-4 sm:px-6 sm:py-6 md:px-8 md:py-8 text-center flex flex-col items-center gap-4 sm:gap-5">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white drop-shadow-lg leading-tight">
-            <Trans i18nKey={"home.hero.title"} />
+            <Trans t={t} i18nKey={"home.hero.title"} />
           </h1>
 
           <p className="text-xs sm:text-sm md:text-base text-slate-200/90 leading-relaxed max-w-md">
             <Trans
+              t={t}
               i18nKey={"home.hero.description"}
               components={{
                 bold: <span className={"font-semibold"} />,
               }}
             />
             <Trans
+              t={t}
               i18nKey={"home.hero.secondaryDescription"}
               components={{
                 span: <span className={"hidden lg:inline"} />,
@@ -41,7 +45,7 @@ function App() {
             hash={"contact"}
             className="cursor-pointer inline-flex items-center justify-center px-5 py-2 rounded-xl bg-white/15 hover:bg-white/20 border border-white/30 text-white font-medium backdrop-blur transition text-xs sm:text-sm md:text-base"
           >
-            <Trans i18nKey={"home.hero.button"} />
+            <Trans t={t} i18nKey={"home.hero.button"} />
           </Link>
 
           <img
@@ -59,15 +63,15 @@ function App() {
           >
             <div className="mx-auto max-w-5xl text-center space-y-6">
               <div className="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium uppercase tracking-wide bg-(--color-surface) border border-(--color-border) text-(--color-text-muted)">
-                <Trans i18nKey={"home.introduction.label"} />
+                <Trans t={t} i18nKey={"home.introduction.label"} />
               </div>
 
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-(--color-text)">
-                <Trans i18nKey={"home.introduction.title"} />
+                <Trans t={t} i18nKey={"home.introduction.title"} />
               </h2>
 
               <p className="mx-auto max-w-3xl text-sm sm:text-base leading-relaxed text-(--color-text-muted)">
-                <Trans i18nKey={"home.introduction.description"} />
+                <Trans t={t} i18nKey={"home.introduction.description"} />
               </p>
             </div>
           </section>
@@ -87,13 +91,14 @@ function App() {
 
                 <div className="flex flex-col justify-start">
                   <p className="text-sm font-semibold uppercase tracking-wide text-(--color-primary) dark:text-(--color-text-muted) mb-3 text-center">
-                    <Trans i18nKey={"home.us.question"} />
+                    <Trans t={t} i18nKey={"home.us.question"} />
                   </p>
 
                   <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-                    <Trans i18nKey={"home.us.title"} />
+                    <Trans t={t} i18nKey={"home.us.title"} />
                   </h2>
                   <Trans
+                    t={t}
                     i18nKey={"home.us.description"}
                     components={{
                       p: (

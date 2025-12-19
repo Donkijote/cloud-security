@@ -1,19 +1,20 @@
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import { getRouteApi, Link } from "@tanstack/react-router";
 
 export const Services = () => {
   const services = getRouteApi("/").useLoaderData();
+  const { t } = useTranslation("translations", { keyPrefix: "home.services" });
 
   return (
     <section id={"services"} className="py-16 md:py-24 bg-(--color-bg)">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-10 md:mb-14 max-w-2xl">
           <h2 className="text-3xl md:text-4xl font-semibold text-(--color-text)">
-            <Trans i18nKey={"home.services.title"} />
+            <Trans t={t} i18nKey={"title"} />
           </h2>
           <p className="mt-4 text-base text-(--color-text-muted)">
-            <Trans i18nKey={"home.services.description"} />
+            <Trans t={t} i18nKey={"description"} />
           </p>
         </div>
 
