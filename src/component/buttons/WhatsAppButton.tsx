@@ -26,7 +26,7 @@ export const WhatsAppButton = () => {
       chatboxStyle={{ backgroundColor: "transparent" }}
       placeholder={"Escriba su mensaje..."}
       buttonClassName={clsx(
-        "!bottom-4 md:!bottom-6 !right-2 md:!right-4 !w-11 !h-11 after:!shadow-none transition-all duration-300",
+        "!bottom-4 md:!bottom-6 !right-2 md:!right-4 !w-11 !h-11 after:!shadow-none transition-all duration-300 !z-40",
         {
           "!bottom-18 md:!bottom-20": goBackButton,
         },
