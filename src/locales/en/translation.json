@@ -69,5 +69,25 @@
     "services": "Services",
     "about": "About Us",
     "contact": "Contact"
+  },
+  "footer": {
+    "description": "Tailor-made security solutions to protect your spaces, assets, and people.",
+    "us": {
+      "title": "About Us",
+      "home": "Home",
+      "about": "About Us"
+    },
+    "services": {
+      "title": "Services",
+      "link": "Our Services"
+    },
+    "contact": {
+      "title": "Contact",
+      "link": "Know more"
+    },
+    "privacy": "Privacy Policies",
+    "terms": "Terms and Services",
+    "rights": "© {{year}} Cloud Security. All rights reserved.",
+    "developer": "Developed by"
   }
 }

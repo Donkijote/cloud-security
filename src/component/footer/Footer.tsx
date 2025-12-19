@@ -1,4 +1,5 @@
 import { clsx } from "clsx";
+import { Trans } from "react-i18next";
 
 import { Link } from "@tanstack/react-router";
 
@@ -22,14 +23,13 @@ export const Footer = () => {
               />
             </Link>
             <p className="max-w-xs text-sm leading-relaxed">
-              Soluciones de seguridad a medida para proteger tus espacios,
-              activos y personas.
+              <Trans i18nKey={"footer.description"} />
             </p>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-sm font-semibold tracking-wide text-(--color-text)">
-              Nosotros
+              <Trans i18nKey={"footer.us.title"} />
             </h3>
             <nav className="space-y-2 text-sm">
               <Link
@@ -37,21 +37,21 @@ export const Footer = () => {
                 hash={"home"}
                 className="block hover:text-(--color-primary) transition-colors"
               >
-                Inicio
+                <Trans i18nKey={"footer.us.home"} />
               </Link>
               <Link
                 to="/"
                 hash={"about"}
                 className="block hover:text-(--color-primary) transition-colors"
               >
-                Sobre nosotros
+                <Trans i18nKey={"footer.us.about"} />
               </Link>
             </nav>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-sm font-semibold tracking-wide text-(--color-text)">
-              Servicios
+              <Trans i18nKey={"footer.services.title"} />
             </h3>
             <nav className="space-y-2 text-sm">
               <Link
@@ -59,14 +59,14 @@ export const Footer = () => {
                 hash={"services"}
                 className="block hover:text-(--color-primary) transition-colors"
               >
-                Nuestros servicios
+                <Trans i18nKey={"footer.services.link"} />
               </Link>
             </nav>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-sm font-semibold tracking-wide text-(--color-text)">
-              Contacto
+              <Trans i18nKey={"footer.contact.title"} />
             </h3>
             <nav className="space-y-2 text-sm">
               <Link
@@ -74,7 +74,7 @@ export const Footer = () => {
                 hash={"contact"}
                 className="block hover:text-(--color-primary) transition-colors"
               >
-                Conocer más
+                <Trans i18nKey={"footer.contact.link"} />
               </Link>
             </nav>
           </div>
@@ -87,22 +87,22 @@ export const Footer = () => {
                 to={"/"}
                 className="hover:text-(--color-primary) transition-colors"
               >
-                Políticas de privacidad
+                <Trans i18nKey={"footer.privacy"} />
               </Link>
               <Link
                 to={"/"}
                 className="hover:text-(--color-primary) transition-colors"
               >
-                Términos y servicios
+                <Trans i18nKey={"footer.terms"} />
               </Link>
             </div>
 
             <div className="text-(--color-text-muted)">
-              © {year} Cloud Security. Todos los derechos reservados.
+              <Trans i18nKey={"footer.rights"} values={{ year }} />
             </div>
 
             <div className="text-(--color-text-muted) text-center md:text-right">
-              Desarrollado por{" "}
+              <Trans i18nKey={"footer.developer"} />{" "}
               <a
                 href="https://www.linkedin.com/in/manuel-jos%C3%A9-gon%C3%A7alves-castellano-6b7151150/"
                 target={"_blank"}
