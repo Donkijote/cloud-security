@@ -3,14 +3,16 @@ import { Trans } from "react-i18next";
 
 import { Link } from "@tanstack/react-router";
 
+import { LanguageSwitcher } from "./LanguageSwitcher";
+
 const year = new Date().getFullYear();
 
 export const Footer = () => {
   return (
     <footer className="border-t border-(--color-border-subtle) bg-(--color-surface) text-(--color-text-muted)">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid gap-10 md:grid-cols-4">
-          <div className="space-y-6 flex flex-col items-center">
+        <div className="grid gap-8 md:grid-cols-6">
+          <div className="space-y-6 flex flex-col items-center col-span-2">
             <Link to="/" className="inline-flex items-center justify-center">
               <img
                 src="/logo.png"
@@ -77,6 +79,10 @@ export const Footer = () => {
                 <Trans i18nKey={"footer.contact.link"} />
               </Link>
             </nav>
+          </div>
+
+          <div className="space-y-4">
+            <LanguageSwitcher />
           </div>
         </div>
 
