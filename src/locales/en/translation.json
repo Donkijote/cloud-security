@@ -14,6 +14,54 @@
     "services": {
       "title": "Our Services",
       "description": "We offer comprehensive security solutions designed to protect your spaces.\n\nWe install advanced systems including video surveillance, fire alarms, electric fences, and access control.\n\nWe incorporate cutting-edge technologies that guarantee continuous, reliable protection tailored to the needs of your home or business."
+    },
+    "us": {
+      "question": "Who Are We?",
+      "title": "More than 25 years of experience in comprehensive security",
+      "description": "<p>In <span>Cloud Security</span> we care what matters the most.</p><p>We are specialists in electronic security and offer\n\ncomprehensive solutions: project design, installations in\nthe various security lines, customized implementation, and ongoing support.</p><p>With certified technology, professional equipment, and personalized service, your safety is in the best hands.</p>"
+    },
+    "contact": {
+      "label": "Contact Us",
+      "title": "We'd love to learn more about your projects…",
+      "subtitle": "We are here to support you with electronic security, cameras, alarms, and electrical systems.",
+      "location": {
+        "title": "Location",
+        "description": "Santiago, Región Metropolitana, Chile."
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Our team will be in touch with you briefly."
+      },
+      "form": {
+        "title": "Send us a message",
+        "fields": {
+          "name": {
+            "label": "Name",
+            "placeholder": "Your name"
+          },
+          "email": {
+            "label": "Email",
+            "placeholder": "user@domain.com"
+          },
+          "phone": {
+            "label": "Phone",
+            "placeholder": "+56 9 456 78910"
+          },
+          "message": {
+            "label": "Message",
+            "placeholder": "Type your message"
+          },
+          "required": "Required"
+        },
+        "button": {
+          "default": "Send Message",
+          "loading": "Sending"
+        },
+        "messages": {
+          "success": "Message sent successfully!",
+          "error": "Error sending the message"
+        }
+      }
     }
   }
 }

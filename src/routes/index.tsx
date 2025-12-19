@@ -87,32 +87,23 @@ function App() {
 
                 <div className="flex flex-col justify-start">
                   <p className="text-sm font-semibold uppercase tracking-wide text-(--color-primary) dark:text-(--color-text-muted) mb-3 text-center">
-                    ¿Quiénes somos?
+                    <Trans i18nKey={"home.us.question"} />
                   </p>
 
                   <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-                    Más de 25 años de experiencia en seguridad integral
+                    <Trans i18nKey={"home.us.title"} />
                   </h2>
-
-                  <p className="mt-2 text-(--color-text-muted) leading-relaxed text-left">
-                    En{" "}
-                    <span className="font-semibold text-(--color-text)">
-                      Cloud Security
-                    </span>{" "}
-                    cuidamos lo que más te importa.
-                  </p>
-
-                  <p className="mt-4 text-(--color-text-muted) leading-relaxed text-left">
-                    Somos especialistas en seguridad electrónica y ofrecemos
-                    soluciones integrales: diseño de proyectos, instalaciones en
-                    las distintas líneas de seguridad, implementación a la
-                    medida y soporte continuo.
-                  </p>
-
-                  <p className="mt-4 text-(--color-text-muted) leading-relaxed text-left">
-                    Con tecnología certificada, equipos profesionales y un trato
-                    personalizado, tu seguridad está en las mejores manos.
-                  </p>
+                  <Trans
+                    i18nKey={"home.us.description"}
+                    components={{
+                      p: (
+                        <p className="mt-4 text-(--color-text-muted) leading-relaxed text-left" />
+                      ),
+                      span: (
+                        <span className="font-semibold text-(--color-text)" />
+                      ),
+                    }}
+                  />
                 </div>
               </div>
             </div>

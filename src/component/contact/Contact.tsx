@@ -1,4 +1,5 @@
 import { Mail, MapPin } from "lucide-react";
+import { Trans } from "react-i18next";
 
 import { ContactForm } from "@/component/form/ContactForm";
 
@@ -13,14 +14,13 @@ export const Contact = () => {
           <div className="space-y-10">
             <div className="space-y-3 max-w-xl">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-(--color-primary) dark:text-(--color-text-muted)">
-                Contáctanos
+                <Trans i18nKey={"home.contact.label"} />
               </p>
               <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                Nos encantaría conocer más de tus proyectos…
+                <Trans i18nKey={"home.contact.title"} />
               </h2>
               <p className="text-lg font-medium text-(--color-text-muted)">
-                Estamos para apoyarte en seguridad electrónica, cámaras, alarmas
-                y sistemas eléctricos.
+                <Trans i18nKey={"home.contact.subtitle"} />
               </p>
             </div>
 
@@ -30,9 +30,11 @@ export const Contact = () => {
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-semibold mb-2">Ubicación</h3>
+                  <h3 className="text-base font-semibold mb-2">
+                    <Trans i18nKey={"home.contact.location.title"} />
+                  </h3>
                   <p className="text-sm text-(--color-text-muted)">
-                    Santiago, Región Metropolitana, Chile.
+                    <Trans i18nKey={"home.contact.location.description"} />
                   </p>
                 </div>
               </div>
@@ -42,9 +44,11 @@ export const Contact = () => {
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-semibold mb-2">Contacto</h3>
+                  <h3 className="text-base font-semibold mb-2">
+                    <Trans i18nKey={"home.contact.contact.title"} />
+                  </h3>
                   <p className="text-sm text-(--color-text-muted) mb-1">
-                    Nuestro equipo se pondrá en contacto contigo.
+                    <Trans i18nKey={"home.contact.contact.description"} />
                   </p>
                   <a
                     href="mailto:contacto@cloud-security.cl"
@@ -62,7 +66,7 @@ export const Contact = () => {
               <div className="pointer-events-none absolute -inset-px rounded-2xl bg-linear-to-br from-(--color-primary)/10 via-transparent to-(--color-primary)/10 opacity-70" />
               <div className="relative">
                 <h3 className="mb-6 text-2xl font-semibold md:text-[26px]">
-                  Envíanos un mensaje
+                  <Trans i18nKey={"home.contact.form.title"} />
                 </h3>
 
                 <ContactForm />

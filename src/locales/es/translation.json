@@ -14,6 +14,54 @@
     "services": {
       "title": "Our Services",
       "description": "Ofrecemos soluciones integrales de seguridad orientadas a proteger\ntus espacios mediante la instalación de sistemas avanzados de\nvideovigilancia, alarmas contra incendios, cercos eléctricos y\ncontrol de accesos. Incorporamos tecnologías de última generación\nque garantizan una protección continua, confiable y adaptada a las\nnecesidades de tu hogar o negocio."
+    },
+    "us": {
+      "question": "¿Quiénes somos?",
+      "title": "Más de 25 años de experiencia en seguridad integral",
+      "description": "<p>En <span>Cloud Security</span> cuidamos lo que más te importa.</p><p>Somos especialistas en seguridad electrónica y ofrecemos soluciones integrales: diseño de proyectos, instalaciones en las distintas líneas de seguridad, implementación personalizada y soporte continuo.</p><p> Con tecnología certificada, equipos profesionales y un trato\npersonalizado, tu seguridad está en las mejores manos.</p>"
+    },
+    "contact": {
+      "label": "Contáctanos",
+      "title": "Nos encantaría conocer más de tus proyectos…",
+      "subtitle": "Estamos para apoyarte en seguridad electrónica, cámaras, alarmas\ny sistemas eléctricos.",
+      "location": {
+        "title": "Ubicación",
+        "description": "Santiago, Región Metropolitana, Chile."
+      },
+      "contact": {
+        "title": "Contacto",
+        "description": "Nuestro equipo se pondrá en contacto contigo."
+      },
+      "form": {
+        "title": "Envíanos un mensaje",
+        "fields": {
+          "name": {
+            "label": "Nombre",
+            "placeholder": "Tu nombre"
+          },
+          "email": {
+            "label": "Email",
+            "placeholder": "usuario@dominio.com"
+          },
+          "phone": {
+            "label": "Teléfono",
+            "placeholder": "+56 9 456 78910"
+          },
+          "message": {
+            "label": "Mensaje",
+            "placeholder": "Escribe tu mensaje"
+          },
+          "required": "Campo requerido"
+        },
+        "button": {
+          "default": "Enviar mensaje",
+          "loading": "Enviando"
+        },
+        "messages": {
+          "success": "¡Mensaje enviado con éxito!",
+          "error": "Error al enviar el mensaje."
+        }
+      }
     }
   }
 }
