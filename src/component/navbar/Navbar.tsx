@@ -2,16 +2,17 @@ import { Activity, useState } from "react";
 
 import { clsx } from "clsx";
 import { Menu, X } from "lucide-react";
+import { Trans } from "react-i18next";
 
 import { Link } from "@tanstack/react-router";
 
 import { ThemeToggle } from "@/component/theme/ThemToggle";
 
 const NAV_LINKS = [
-  { to: "/", label: "Home", hash: "home" },
-  { to: "/", label: "Services", hash: "services" },
-  { to: "/", label: "About Us", hash: "about" },
-  { to: "/", label: "Contact", hash: "contact" },
+  { to: "/", hash: "home" },
+  { to: "/", hash: "services" },
+  { to: "/", hash: "about" },
+  { to: "/", hash: "contact" },
 ];
 
 export const Navbar = () => {
@@ -44,7 +45,7 @@ export const Navbar = () => {
           <div className="flex-1 flex justify-center">
             <ul className="hidden md:flex gap-8 text-sm font-medium">
               {NAV_LINKS.map((link) => (
-                <li key={link.label}>
+                <li key={link.hash}>
                   <Link
                     to={link.to}
                     hash={link.hash}
@@ -60,7 +61,7 @@ export const Navbar = () => {
                         "text-blue-600 dark:text-blue-400 font-semibold",
                     }}
                   >
-                    {link.label}
+                    <Trans i18nKey={`navbar.${link.hash}`} />
                   </Link>
                 </li>
               ))}
@@ -126,7 +127,7 @@ export const Navbar = () => {
               </button>
             </div>
             {NAV_LINKS.map((link) => (
-              <li key={link.label}>
+              <li key={link.hash}>
                 <Link
                   to={link.to}
                   hash={link.hash}
@@ -144,7 +145,7 @@ export const Navbar = () => {
                   }}
                   onClick={() => setIsOpen(false)}
                 >
-                  {link.label}
+                  <Trans i18nKey={`navbar.${link.hash}`} />
                 </Link>
               </li>
             ))}
