@@ -2,9 +2,14 @@ import { Trans, useTranslation } from "react-i18next";
 
 import { getRouteApi, Link } from "@tanstack/react-router";
 
+import { translate } from "@/helpers/i18n-db";
+
 export const Services = () => {
   const services = getRouteApi("/").useLoaderData();
-  const { t } = useTranslation("translation", { keyPrefix: "home.services" });
+  const { t, i18n } = useTranslation("translation", {
+    keyPrefix: "home.services",
+  });
+  const language = i18n.resolvedLanguage ?? i18n.language;
 
   return (
     <section id={"services"} className="py-16 md:py-24 bg-(--color-bg)">
@@ -33,9 +38,11 @@ export const Services = () => {
               />
               <div className="absolute inset-0 bg-black/35 backdrop-blur-xs flex flex-col justify-end p-5 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-semibold text-white">
-                  {title}
+                  {translate(title, language)}
                 </h3>
-                <p className="mt-2 text-sm text-slate-200">{description}</p>
+                <p className="mt-2 text-sm text-slate-200">
+                  {translate(description, language)}
+                </p>
               </div>
             </Link>
           ))}

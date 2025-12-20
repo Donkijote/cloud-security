@@ -1,9 +1,11 @@
 import { clsx } from "clsx";
+import { useTranslation } from "react-i18next";
 
 import { createFileRoute } from "@tanstack/react-router";
 
 import { getServiceById } from "@/api/get-service-by-id";
 import { Hero } from "@/component/hero/Hero";
+import { translate } from "@/helpers/i18n-db";
 
 export const Route = createFileRoute("/services/$id")({
   component: ServicePage,
@@ -15,10 +17,16 @@ export const Route = createFileRoute("/services/$id")({
 
 function ServicePage() {
   const service = Route.useLoaderData();
+  const { i18n } = useTranslation();
+
+  const language = i18n.resolvedLanguage ?? i18n.language;
 
   return (
     <div className="-mt-20 bg-(--color-bg)">
-      <Hero imageSrc={service.heroUrl} imageAlt={service.title} />
+      <Hero
+        imageSrc={service.heroUrl}
+        imageAlt={translate(service.title, language)}
+      />
       <div className="relative z-10 pt-[70vh] xl:pt-[90vh]">
         <div className="grid gap-16 grid-cols-1">
           <section
@@ -27,14 +35,14 @@ function ServicePage() {
           >
             <div className="mx-auto max-w-5xl text-center space-y-6">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-(--color-text)">
-                {service.title}
+                {translate(service.title, language)}
               </h2>
             </div>
           </section>
         </div>
         {service.sections.map((section, index) => (
           <section
-            key={section.title}
+            key={translate(section.title, language)}
             className="py-20 md:py-28 text-(--color-text)"
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,7 +58,7 @@ function ServicePage() {
                 >
                   <img
                     src={section.imgUrl}
-                    alt={section.title}
+                    alt={translate(section.title, language)}
                     className="h-full w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-(--color-primary)/10" />
@@ -63,11 +71,11 @@ function ServicePage() {
                   })}
                 >
                   <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-                    {section.title}
+                    {translate(section.title, language)}
                   </h2>
 
                   <p className="mt-4 text-(--color-text-muted) leading-relaxed text-center">
-                    {section.description}
+                    {translate(section.description, language)}
                   </p>
                 </div>
               </div>
