@@ -4,7 +4,7 @@ import { getRouteApi, Link } from "@tanstack/react-router";
 
 export const Services = () => {
   const services = getRouteApi("/").useLoaderData();
-  const { t } = useTranslation("translations", { keyPrefix: "home.services" });
+  const { t } = useTranslation("translation", { keyPrefix: "home.services" });
 
   return (
     <section id={"services"} className="py-16 md:py-24 bg-(--color-bg)">
