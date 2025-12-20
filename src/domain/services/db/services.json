@@ -2,133 +2,259 @@
   {
     "id": "cctv-cameras",
     "imgUrl": "/images/cameras/camera-thumbnail.png",
-    "title": "CCTV & Cámaras",
-    "description": "Monitoreo 24/7 con sistemas de videovigilancia de alta definición.",
     "heroUrl": "/images/cameras/hero.png",
+    "title": {
+      "es": "CCTV & Cámaras",
+      "en": "CCTV & Cameras"
+    },
+    "description": {
+      "es": "Monitoreo 24/7 con sistemas de videovigilancia de alta definición.",
+      "en": "24/7 monitoring with high-definition video surveillance systems."
+    },
     "sections": [
       {
-        "title": "Videovigilancia CCTV ",
-        "description": "El circuito cerrado de televisión (CCTV) es una solución eficiente y continua diseñada para monitorear y asegurar todo tipo de espacios: empresas, hogares, comunidades y edificios.",
-        "imgUrl": "/images/cameras/camera-1.png"
+        "imgUrl": "/images/cameras/camera-1.png",
+        "title": {
+          "es": "Videovigilancia CCTV",
+          "en": "CCTV Video Surveillance"
+        },
+        "description": {
+          "es": "El circuito cerrado de televisión (CCTV) es una solución eficiente y continua diseñada para monitorear y asegurar todo tipo de espacios: empresas, hogares, comunidades y edificios.",
+          "en": "Closed-circuit television (CCTV) is an efficient, continuous solution designed to monitor and secure all types of spaces, including businesses, homes, communities, and buildings."
+        }
       },
       {
-        "title": "Protegé lo que más te importa con la tecnología más avanzada",
-        "description": "Ofrecemos sistemas de inteligencia artificial y control perimetral con una amplia gama de cámaras de seguridad de última generación, diseñadas para adaptarse a las necesidades específicas de tu empresa, industria o residencia. Tecnología avanzada que permite una vigilancia precisa, análisis en tiempo real y una protección proactiva de tus espacios más críticos",
-        "imgUrl": "/images/cameras/camera-2.png"
+        "imgUrl": "/images/cameras/camera-2.png",
+        "title": {
+          "es": "Protegé lo que más te importa con la tecnología más avanzada",
+          "en": "Protect what matters most with the most advanced technology"
+        },
+        "description": {
+          "es": "Ofrecemos sistemas de inteligencia artificial y control perimetral con una amplia gama de cámaras de seguridad de última generación, diseñadas para adaptarse a las necesidades específicas de tu empresa, industria o residencia. Tecnología avanzada que permite una vigilancia precisa, análisis en tiempo real y una protección proactiva de tus espacios más críticos",
+          "en": "We offer artificial intelligence systems and perimeter control with a wide range of next-generation security cameras, designed to adapt to the specific needs of your business, industry, or residence. Advanced technology enables precise surveillance, real-time analysis, and proactive protection of your most critical spaces."
+        }
       }
     ]
   },
   {
     "id": "fire-alarm-systems",
     "imgUrl": "/images/fire/fire-thumbnail.png",
-    "title": "Sistemas Contra Incendios",
-    "description": "Tecnología de detección temprana para proteger vidas y propiedades.",
     "heroUrl": "/images/fire/hero.png",
+    "title": {
+      "es": "Sistemas Contra Incendios",
+      "en": "Fire Alarm Systems"
+    },
+    "description": {
+      "es": "Tecnología de detección temprana para proteger vidas y propiedades.",
+      "en": "Early detection technology to protect lives and property."
+    },
     "sections": [
       {
-        "title": "Detección de Incendios Inteligente",
-        "description": "Nuestros sistemas de detección de incendios están diseñados para identificar de forma temprana la presencia de humo, calor o fuego, activando de inmediato alarmas y protocolos de localización. Esto permite una respuesta rápida y coordinada, minimizando riesgos y protegiendo tanto vidas como bienes.",
-        "imgUrl": "/images/fire/fire-1.png"
+        "imgUrl": "/images/fire/fire-1.png",
+        "title": {
+          "es": "Detección de Incendios Inteligente",
+          "en": "Smart Fire Detection"
+        },
+        "description": {
+          "es": "Nuestros sistemas de detección de incendios están diseñados para identificar de forma temprana la presencia de humo, calor o fuego, activando de inmediato alarmas y protocolos de localización. Esto permite una respuesta rápida y coordinada, minimizando riesgos y protegiendo tanto vidas como bienes.",
+          "en": "Our fire detection systems are designed to identify smoke, heat, or fire at an early stage, immediately activating alarms and localization protocols. This enables a fast, coordinated response, minimizing risks and protecting both lives and assets."
+        }
       },
       {
-        "title": "",
-        "description": "En <strong>\nCloud Security\n</strong>, ofrecemos soluciones avanzadas para empresas e industrias, integrando tecnologías inteligentes y sistemas autónomos (standalone) que se adaptan a cada entorno con máxima eficiencia y confiabilidad.",
-        "imgUrl": "/images/fire/fire-2.png"
+        "imgUrl": "/images/fire/fire-2.png",
+        "title": {
+          "es": "",
+          "en": ""
+        },
+        "description": {
+          "es": "En <strong>Cloud Security</strong>, ofrecemos soluciones avanzadas para empresas e industrias, integrando tecnologías inteligentes y sistemas autónomos (standalone) que se adaptan a cada entorno con máxima eficiencia y confiabilidad.",
+          "en": "At <strong>Cloud Security</strong>, we provide advanced solutions for businesses and industries, integrating intelligent technologies and standalone systems that adapt to each environment with maximum efficiency and reliability."
+        }
       }
     ]
   },
   {
     "id": "electric-fences",
     "imgUrl": "/images/electric/electric-thumbnail.png",
-    "title": "Cercos Eléctricos",
-    "description": "Protección perimetral efectiva que disuade intrusos.",
     "heroUrl": "/images/electric/hero.png",
+    "title": {
+      "es": "Cercos Eléctricos",
+      "en": "Electric Fences"
+    },
+    "description": {
+      "es": "Protección perimetral efectiva que disuade intrusos.",
+      "en": "Effective perimeter protection that deters intruders."
+    },
     "sections": [
       {
-        "title": "Tu Primera Línea de Defensa.",
-        "description": "En Cloud-Security te ofrecemos sistemas de cerco eléctrico de alto rendimiento, diseñados para uso residencial, industrial y ganadero.\nNuestras soluciones proporcionan una barrera física disuasiva que retrasa cualquier intento de intrusión, mientras tú mantienes el control total a través de una app de monitoreo en tiempo real.",
-        "imgUrl": "/images/electric/electric-1.png"
+        "imgUrl": "/images/electric/electric-1.png",
+        "title": {
+          "es": "Tu Primera Línea de Defensa.",
+          "en": "Your First Line of Defense."
+        },
+        "description": {
+          "es": "En Cloud-Security te ofrecemos sistemas de cerco eléctrico de alto rendimiento, diseñados para uso residencial, industrial y ganadero.\nNuestras soluciones proporcionan una barrera física disuasiva que retrasa cualquier intento de intrusión, mientras tú mantienes el control total a través de una app de monitoreo en tiempo real.",
+          "en": "At Cloud Security, we offer high-performance electric fence systems designed for residential, industrial, and agricultural use.\nOur solutions provide a physical deterrent barrier that delays intrusion attempts, while you maintain full control through a real-time monitoring app."
+        }
       },
       {
-        "title": "Certificación SEC",
-        "description": "Nuestros cercos residenciales, empresariales y agrícolas cuentan con la certificación oficial exigida por la Superintendencia de Electricidad y Combustible.",
-        "imgUrl": "/images/electric/electric-2.png"
+        "imgUrl": "/images/electric/electric-2.png",
+        "title": {
+          "es": "Certificación SEC",
+          "en": "SEC Certification"
+        },
+        "description": {
+          "es": "Nuestros cercos residenciales, empresariales y agrícolas cuentan con la certificación oficial exigida por la Superintendencia de Electricidad y Combustible.",
+          "en": "Our residential, commercial, and agricultural electric fences comply with the official certification required by the Superintendence of Electricity and Fuels."
+        }
       }
     ]
   },
   {
     "id": "intruder-alarm",
     "imgUrl": "/images/alarm/alarm-thumbnail.png",
-    "title": "Alarmas Antirrobo",
-    "description": "Sistemas confiables para proteger tu propiedad contra robos.",
     "heroUrl": "/images/alarm/hero.png",
+    "title": {
+      "es": "Alarmas Antirrobo",
+      "en": "Intruder Alarms"
+    },
+    "description": {
+      "es": "Sistemas confiables para proteger tu propiedad contra robos.",
+      "en": "Reliable systems to protect your property against theft."
+    },
     "sections": [
       {
-        "title": "Protege lo que más valoras con tecnología de seguridad de última generación.",
-        "description": "En Cloud-Security, te ofrecemos sistemas avanzados de detección de intrusos diseñados para brindarte control total desde la nube. Contamos con soluciones cableadas, inalámbricas e híbridas, adaptables a entornos residenciales, comerciales e industriales..",
-        "imgUrl": "/images/alarm/alarm-1.png"
+        "imgUrl": "/images/alarm/alarm-1.png",
+        "title": {
+          "es": "Protege lo que más valoras con tecnología de seguridad de última generación.",
+          "en": "Protect what you value most with next-generation security technology."
+        },
+        "description": {
+          "es": "En Cloud-Security, te ofrecemos sistemas avanzados de detección de intrusos diseñados para brindarte control total desde la nube. Contamos con soluciones cableadas, inalámbricas e híbridas, adaptables a entornos residenciales, comerciales e industriales.",
+          "en": "At Cloud Security, we offer advanced intruder detection systems designed to give you full cloud-based control. We provide wired, wireless, and hybrid solutions adaptable to residential, commercial, and industrial environments."
+        }
       },
       {
-        "title": "Control a distancia.",
-        "description": "Esta tecnología inteligente te permite estar siempre conectado a tu sistema de seguridad desde tu smartphone, tablet o computador, brindándote tranquilidad y control total las 24 horas del día, desde cualquier parte del mundo.",
-        "imgUrl": "/images/alarm/alarm-2.png"
+        "imgUrl": "/images/alarm/alarm-2.png",
+        "title": {
+          "es": "Control a distancia.",
+          "en": "Remote Control."
+        },
+        "description": {
+          "es": "Esta tecnología inteligente te permite estar siempre conectado a tu sistema de seguridad desde tu smartphone, tablet o computador, brindándote tranquilidad y control total las 24 horas del día, desde cualquier parte del mundo.",
+          "en": "This smart technology allows you to stay connected to your security system at all times from your smartphone, tablet, or computer, giving you peace of mind and full control 24/7 from anywhere in the world."
+        }
       }
     ]
   },
   {
     "id": "access-control-systems",
     "imgUrl": "/images/access/access-thumbnail.png",
-    "title": "Control de Acceso",
-    "description": "Sistemas inteligentes para gestionar entradas de forma segura.",
     "heroUrl": "/images/access/hero.png",
+    "title": {
+      "es": "Control de Acceso",
+      "en": "Access Control"
+    },
+    "description": {
+      "es": "Sistemas inteligentes para gestionar entradas de forma segura.",
+      "en": "Intelligent systems to manage secure access."
+    },
     "sections": [
       {
-        "title": "",
-        "description": "Optimiza el ingreso a tus instalaciones con nuestro sistema de control de acceso automatizado. Autoriza o restringe el paso a zonas específicas de forma rápida, segura y personalizada.",
-        "imgUrl": "/images/access/access-1.png"
+        "imgUrl": "/images/access/access-1.png",
+        "title": {
+          "es": "",
+          "en": ""
+        },
+        "description": {
+          "es": "Optimiza el ingreso a tus instalaciones con nuestro sistema de control de acceso automatizado. Autoriza o restringe el paso a zonas específicas de forma rápida, segura y personalizada.",
+          "en": "Optimize access to your facilities with our automated access control system. Authorize or restrict entry to specific areas quickly, securely, and in a fully customized way."
+        }
       },
       {
-        "title": "",
-        "description": "Mejora la eficiencia operativa y refuerza la seguridad en tiempo real, adaptado a las necesidades de tu organización.",
-        "imgUrl": "/images/access/access-2.png"
+        "imgUrl": "/images/access/access-2.png",
+        "title": {
+          "es": "",
+          "en": ""
+        },
+        "description": {
+          "es": "Mejora la eficiencia operativa y refuerza la seguridad en tiempo real, adaptado a las necesidades de tu organización.",
+          "en": "Improve operational efficiency and strengthen real-time security, tailored to your organization’s needs."
+        }
       }
     ]
   },
   {
     "id": "intercoms",
     "imgUrl": "/images/intercoms/intercoms-thumbnail.png",
-    "title": "Citofonía",
-    "description": "Instalación y mantenimiento de equipos de citofonía.",
     "heroUrl": "/images/intercoms/hero.png",
+    "title": {
+      "es": "Citofonía",
+      "en": "Intercom Systems"
+    },
+    "description": {
+      "es": "Instalación y mantenimiento de equipos de citofonía.",
+      "en": "Installation and maintenance of intercom systems."
+    },
     "sections": [
       {
-        "title": "Citofonía Digital de Alta Confiabilidad",
-        "description": "En Cloud-Security brindamos soluciones avanzadas de citofonía y control de acceso, diseñadas para optimizar la comunicación y reforzar la seguridad en entornos residenciales, corporativos y comunitarios.",
-        "imgUrl": "/images/intercoms/intercoms-1.png"
+        "imgUrl": "/images/intercoms/intercoms-1.png",
+        "title": {
+          "es": "Citofonía Digital de Alta Confiabilidad",
+          "en": "High-Reliability Digital Intercom Systems"
+        },
+        "description": {
+          "es": "En Cloud-Security brindamos soluciones avanzadas de citofonía y control de acceso, diseñadas para optimizar la comunicación y reforzar la seguridad en entornos residenciales, corporativos y comunitarios.",
+          "en": "At Cloud Security, we provide advanced intercom and access control solutions designed to optimize communication and enhance security in residential, corporate, and community environments."
+        }
       },
       {
-        "title": "",
-        "description": "Ofrecemos sistemas Standalone y plataformas inteligentes que incorporan tecnología de Inteligencia Artificial para la identificación precisa de personas, permitiendo una gestión de accesos más eficiente, segura y automatizada",
-        "imgUrl": "/images/intercoms/intercoms-2.png"
+        "imgUrl": "/images/intercoms/intercoms-2.png",
+        "title": {
+          "es": "",
+          "en": ""
+        },
+        "description": {
+          "es": "Ofrecemos sistemas Standalone y plataformas inteligentes que incorporan tecnología de Inteligencia Artificial para la identificación precisa de personas, permitiendo una gestión de accesos más eficiente, segura y automatizada",
+          "en": "We offer standalone systems and intelligent platforms that incorporate artificial intelligence technology for precise person identification, enabling more efficient, secure, and automated access management."
+        }
       }
     ]
   },
   {
     "id": "automatization",
     "imgUrl": "/images/automatization/automatization-thumbnail.png",
-    "title": "Automatización",
-    "description": "La combinación de sistemas de automatización del hogar.",
     "heroUrl": "/images/automatization/hero.png",
+    "title": {
+      "es": "Automatización",
+      "en": "Automation"
+    },
+    "description": {
+      "es": "La combinación de sistemas de automatización del hogar.",
+      "en": "The integration of home automation systems."
+    },
     "sections": [
       {
-        "title": "Seguridad Inteligente con Automatización del Hogar",
-        "description": "La combinación de sistemas de automatización del hogar con tecnología de seguridad avanzada permite crear escenarios automáticos y programados que refuerzan la protección y previenen riesgos de manera eficiente.",
-        "imgUrl": "/images/automatization/automatization-1.png"
+        "imgUrl": "/images/automatization/automatization-1.png",
+        "title": {
+          "es": "Seguridad Inteligente con Automatización del Hogar",
+          "en": "Smart Security with Home Automation"
+        },
+        "description": {
+          "es": "La combinación de sistemas de automatización del hogar con tecnología de seguridad avanzada permite crear escenarios automáticos y programados que refuerzan la protección y previenen riesgos de manera eficiente.",
+          "en": "Combining home automation systems with advanced security technology allows the creation of automated and scheduled scenarios that enhance protection and efficiently prevent risks."
+        }
       },
       {
-        "title": "",
-        "description": "Funciones como el encendido de luces, apertura de puertas, apagado de electrodomésticos o la activación y desactivación de alarmas pueden ejecutarse de forma automática para simular presencia, disuadir intrusos y mejorar el control del entorno, incluso a distancia.",
-        "imgUrl": "/images/automatization/automatization-2.png"
+        "imgUrl": "/images/automatization/automatization-2.png",
+        "title": {
+          "es": "",
+          "en": ""
+        },
+        "description": {
+          "es": "Funciones como el encendido de luces, apertura de puertas, apagado de electrodomésticos o la activación y desactivación de alarmas pueden ejecutarse de forma automática para simular presencia, disuadir intrusos y mejorar el control del entorno, incluso a distancia.",
+          "en": "Functions such as turning on lights, opening doors, switching off appliances, or activating and deactivating alarms can run automatically to simulate presence, deter intruders, and improve environmental control—even remotely."
+        }
       }
     ]
   }
