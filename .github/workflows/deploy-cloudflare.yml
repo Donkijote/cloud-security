@@ -45,10 +45,8 @@ jobs:
           echo "$EMAIL_PUBLIC_KEY"   | pnpm wrangler secret put EMAIL_PUBLIC_KEY
           echo "$EMAIL_PRIVATE_KEY"  | pnpm wrangler secret put EMAIL_PRIVATE_KEY
 
-      - name: Deploy Worker
-        uses: cloudflare/wrangler-action@v3
+      - name: Deploy
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          wranglerVersion: "latest"
-          command: deploy
+        run: pnpm run deploy
