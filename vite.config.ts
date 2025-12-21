@@ -13,6 +13,7 @@ const config = defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: "/could-security",
   plugins: [
     devtools(),
     nitro(),

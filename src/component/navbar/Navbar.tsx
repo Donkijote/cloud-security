@@ -8,6 +8,8 @@ import { Link } from "@tanstack/react-router";
 
 import { ThemeToggle } from "@/component/theme/ThemToggle";
 
+import logo from "/logo.png";
+
 const NAV_LINKS = [
   { to: "/", hash: "home" },
   { to: "/", hash: "services" },
@@ -32,7 +34,7 @@ export const Navbar = () => {
           <div className="flex items-center gap-2">
             <Link to={"/"}>
               <img
-                src="/logo.png"
+                src={logo}
                 alt="could-security"
                 width={"80"}
                 className={clsx(

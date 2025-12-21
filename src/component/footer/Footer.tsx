@@ -3,6 +3,7 @@ import { Trans, useTranslation } from "react-i18next";
 
 import { Link } from "@tanstack/react-router";
 
+import logo from "/logo.png";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 const year = new Date().getFullYear();
@@ -17,7 +18,7 @@ export const Footer = () => {
           <div className="space-y-6 flex flex-col items-center col-span-2">
             <Link to="/" className="inline-flex items-center justify-center">
               <img
-                src="/logo.png"
+                src={logo}
                 alt="could-security"
                 width={"120"}
                 className={clsx(

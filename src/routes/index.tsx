@@ -7,6 +7,10 @@ import { Contact } from "@/component/contact/Contact";
 import { Hero } from "@/component/hero/Hero";
 import { Services } from "@/component/services/Services";
 
+import about from "/images/about.png";
+import hero from "/images/hero.png";
+import logo from "/logo.png";
+
 export const Route = createFileRoute("/")({
   component: App,
   loader: async () => await getServices(),
@@ -17,7 +21,7 @@ function App() {
 
   return (
     <div className="-mt-20">
-      <Hero imageSrc={"/images/hero.png"} imageAlt="Cloud security hero image">
+      <Hero imageSrc={hero} imageAlt="Cloud security hero image">
         <div className="max-w-2xl w-full bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl rounded-2xl px-3 py-4 sm:px-6 sm:py-6 md:px-8 md:py-8 text-center flex flex-col items-center gap-4 sm:gap-5">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white drop-shadow-lg leading-tight">
             <Trans t={t} i18nKey={"home.hero.title"} />
@@ -49,7 +53,7 @@ function App() {
           </Link>
 
           <img
-            src="/logo.png"
+            src={logo}
             alt="cloud-security"
             className="hidden sm:block h-8 md:h-10 lg:h-12 invert-[1] brightness-0 mt-1"
           />
@@ -82,7 +86,7 @@ function App() {
               <div className="grid items-start gap-12 md:grid-cols-2">
                 <div className="relative h-72 sm:h-80 md:h-full rounded-3xl overflow-hidden shadow-lg bg-(--color-surface)">
                   <img
-                    src="/images/about.png"
+                    src={about}
                     alt="Equipo de seguridad trabajando en terreno"
                     className="h-full w-full object-cover"
                   />
