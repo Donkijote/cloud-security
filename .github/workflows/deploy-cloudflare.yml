@@ -46,7 +46,7 @@ jobs:
           echo "$EMAIL_PRIVATE_KEY"  | pnpm wrangler secret put EMAIL_PRIVATE_KEY
 
       - name: Deploy
-        with:
+        env:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: pnpm run deploy
