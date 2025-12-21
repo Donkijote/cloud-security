@@ -5,7 +5,6 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { getServiceById } from "@/api/get-service-by-id";
 import { Hero } from "@/component/hero/Hero";
-import { assetWithBase } from "@/helpers/assets";
 import { translate } from "@/helpers/i18n-db";
 
 export const Route = createFileRoute("/services/$id")({
@@ -25,7 +24,7 @@ function ServicePage() {
   return (
     <div className="-mt-20 bg-(--color-bg)">
       <Hero
-        imageSrc={assetWithBase(service.heroUrl)}
+        imageSrc={service.heroUrl}
         imageAlt={translate(service.title, language)}
       />
       <div className="relative z-10 pt-[70vh] xl:pt-[90vh]">
@@ -58,7 +57,7 @@ function ServicePage() {
                   )}
                 >
                   <img
-                    src={assetWithBase(section.imgUrl)}
+                    src={section.imgUrl}
                     alt={translate(section.title, language)}
                     className="h-full w-full object-cover"
                   />

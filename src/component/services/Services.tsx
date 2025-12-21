@@ -2,7 +2,6 @@ import { Trans, useTranslation } from "react-i18next";
 
 import { getRouteApi, Link } from "@tanstack/react-router";
 
-import { assetWithBase } from "@/helpers/assets";
 import { translate } from "@/helpers/i18n-db";
 
 export const Services = () => {
@@ -33,7 +32,7 @@ export const Services = () => {
               className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform hover:scale-[1.03]"
             >
               <img
-                src={assetWithBase(imgUrl)}
+                src={imgUrl}
                 alt={id}
                 className="absolute inset-0 h-full w-full object-cover"
               />

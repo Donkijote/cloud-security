@@ -4,10 +4,9 @@ import { routeTree } from "./routeTree.gen"; // Create a new router instance
 
 // Create a new router instance
 export const getRouter = () => {
-  return createRouter({
-    routeTree,
-    scrollRestoration: true,
-    defaultPreloadStaleTime: 0,
-    basepath: import.meta.env.BASE_URL,
-  });
+	return createRouter({
+		routeTree,
+		scrollRestoration: true,
+		defaultPreloadStaleTime: 0,
+	});
 };
