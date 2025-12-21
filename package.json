@@ -4,12 +4,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev --port 3000",
-    "build": "vite build",
+    "deploy": "pnpm run build && wrangler deploy",
+    "build": "vite build && tsc --noEmit",
+    "preview": "vite preview",
     "serve": "vite preview",
     "test": "vitest run",
     "format": "biome format",
     "lint": "biome lint",
-    "check": "biome check"
+    "check": "biome check",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@dxkit-org/react-floating-whatsapp": "^1.0.9",
