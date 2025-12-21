@@ -9,12 +9,12 @@ export interface IEmailRepository {
 export const EmailRepository: IEmailRepository = {
   sendEmail: async (data: Email): Promise<EmailJSResponseStatus> => {
     return emailjs.send(
-      import.meta.env.VITE_EMAIL_SERVICE_ID,
-      import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+      process.env.EMAIL_SERVICE_ID as string,
+      process.env.EMAIL_TEMPLATE_ID as string,
       { ...data, title: "Cloud Security" },
       {
-        publicKey: import.meta.env.VITE_EMAIL_PUBLIC_KEY,
-        privateKey: import.meta.env.VITE_EMAIL_PRIVATE_KEY,
+        publicKey: process.env.EMAIL_PUBLIC_KEY as string,
+        privateKey: process.env.EMAIL_PRIVATE_KEY as string,
         limitRate: {
           id: "app",
           throttle: 10000,
